@@ -1,0 +1,11 @@
+Fitter Status : Successful - Tue Nov  7 13:40:51 2023
+Quartus Prime Version : 22.1std.2 Build 922 07/20/2023 SC Lite Edition
+Revision Name : ClockDivider
+Top-level Entity Name : ClockDivider
+Family : MAX II
+Device : EPM240T100C5
+Timing Models : Final
+Total logic elements : 2 / 240 ( < 1 % )
+Total pins : 3 / 80 ( 4 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

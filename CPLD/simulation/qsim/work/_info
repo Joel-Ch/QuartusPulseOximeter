@@ -1,0 +1,131 @@
+m255
+K4
+z2
+!s11e MIXED_VERSIONS
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/joel/Documents/Quartus/CPLD/simulation/qsim
+vCPLD
+Z1 !s110 1699286343
+!i10b 1
+!s100 kB<[mn:3=]?CPDd_3?K013
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I>ol5`c[8bJg=3Z73GXJ1;2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1699286342
+8CPLD.vo
+FCPLD.vo
+!i122 104
+L0 32 338
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1699286343.000000
+!s107 CPLD.vo|
+!s90 -work|work|CPLD.vo|
+!i113 1
+Z7 o-work work
+Z8 tCvgOpt 0
+n@c@p@l@d
+Ecpld
+Z9 w1699271770
+Z10 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z11 DPx5 maxii 15 maxii_atom_pack 0 22 M[3^e4UUhBPE2QBOTA<Y?1
+Z12 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z13 DPx5 maxii 16 maxii_components 0 22 `0P`LeL4Ve;z2d]fLfDzU3
+Z14 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z15 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 18
+R0
+Z16 8CPLD.vho
+Z17 FCPLD.vho
+l0
+L35 1
+V^V<_TTm1JmK@j9V<0A]]>2
+!s100 kiTN<1ND:8CF[>`jnM1n11
+Z18 OV;C;2020.1;71
+32
+Z19 !s110 1699271771
+!i10b 1
+Z20 !s108 1699271771.000000
+Z21 !s90 -work|work|CPLD.vho|
+Z22 !s107 CPLD.vho|
+!i113 1
+R7
+Z23 tExplicit 1 CvgOpt 0
+Astructure
+R10
+R11
+R12
+R13
+R14
+R15
+DEx4 work 4 cpld 0 22 ^V<_TTm1JmK@j9V<0A]]>2
+!i122 18
+l68
+L47 123
+Vf:bkO3_`cde_cldVz4jez0
+!s100 ZJFM]i`zRdXB0^X][LP3S0
+R18
+32
+R19
+!i10b 1
+R20
+R21
+R22
+!i113 1
+R7
+R23
+Ecpld_vhd_vec_tst
+w1699271769
+R14
+R15
+!i122 19
+R0
+8Waveform1.vwf.vht
+FWaveform1.vwf.vht
+l0
+L32 1
+VNccW18M@75;o5MGgWaoYP2
+!s100 5m??TC@2OHGh2]F7YRlhZ2
+R18
+32
+R19
+!i10b 1
+R20
+!s90 -work|work|Waveform1.vwf.vht|
+!s107 Waveform1.vwf.vht|
+!i113 1
+R7
+R23
+vCPLD_vlg_vec_tst
+R1
+!i10b 1
+!s100 T8E_W29o1`>Q4@DlAXGfL3
+R2
+I[P3aW9hCjOCz7Va?`WI@Z1
+R3
+R0
+R4
+8Waveform1.vwf.vt
+FWaveform1.vwf.vt
+!i122 105
+L0 30 38
+R5
+r1
+!s85 0
+31
+R6
+!s107 Waveform1.vwf.vt|
+!s90 -work|work|Waveform1.vwf.vt|
+!i113 1
+R7
+R8
+n@c@p@l@d_vlg_vec_tst

@@ -1,0 +1,439 @@
+Timing Analyzer report for ControlSystem
+Thu Nov  9 14:12:26 2023
+Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Fmax Summary
+  6. Setup Summary
+  7. Hold Summary
+  8. Recovery Summary
+  9. Removal Summary
+ 10. Minimum Pulse Width Summary
+ 11. Setup: 'Clock'
+ 12. Setup: '74163:inst29|f74163:sub|134'
+ 13. Hold: 'Clock'
+ 14. Hold: '74163:inst29|f74163:sub|134'
+ 15. Setup Transfers
+ 16. Hold Transfers
+ 17. Report TCCS
+ 18. Report RSKM
+ 19. Unconstrained Paths Summary
+ 20. Clock Status Summary
+ 21. Unconstrained Input Ports
+ 22. Unconstrained Output Ports
+ 23. Unconstrained Input Ports
+ 24. Unconstrained Output Ports
+ 25. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2023  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++--------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                        ;
++-----------------------+--------------------------------------------------------+
+; Quartus Prime Version ; Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
+; Timing Analyzer       ; Legacy Timing Analyzer                                 ;
+; Revision Name         ; ControlSystem                                          ;
+; Device Family         ; MAX II                                                 ;
+; Device Name           ; EPM240T100C5                                           ;
+; Timing Models         ; Final                                                  ;
+; Delay Model           ; Slow Model                                             ;
+; Rise/Fall Delays      ; Unavailable                                            ;
++-----------------------+--------------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 2           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                                                   ;
++-----------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------------------------+
+; Clock Name                  ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets                         ;
++-----------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------------------------+
+; 74163:inst29|f74163:sub|134 ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { 74163:inst29|f74163:sub|134 } ;
+; Clock                       ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { Clock }                       ;
++-----------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------------------------+
+
+
++-------------------------------------------------------------------+
+; Fmax Summary                                                      ;
++------------+-----------------+-----------------------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name                  ; Note ;
++------------+-----------------+-----------------------------+------+
+; 181.39 MHz ; 181.39 MHz      ; Clock                       ;      ;
+; 235.63 MHz ; 235.63 MHz      ; 74163:inst29|f74163:sub|134 ;      ;
++------------+-----------------+-----------------------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++------------------------------------------------------+
+; Setup Summary                                        ;
++-----------------------------+--------+---------------+
+; Clock                       ; Slack  ; End Point TNS ;
++-----------------------------+--------+---------------+
+; Clock                       ; -4.513 ; -21.438       ;
+; 74163:inst29|f74163:sub|134 ; -3.244 ; -11.942       ;
++-----------------------------+--------+---------------+
+
+
++------------------------------------------------------+
+; Hold Summary                                         ;
++-----------------------------+--------+---------------+
+; Clock                       ; Slack  ; End Point TNS ;
++-----------------------------+--------+---------------+
+; Clock                       ; -4.524 ; -12.086       ;
+; 74163:inst29|f74163:sub|134 ; 2.137  ; 0.000         ;
++-----------------------------+--------+---------------+
+
+
+--------------------
+; Recovery Summary ;
+--------------------
+No paths to report.
+
+
+-------------------
+; Removal Summary ;
+-------------------
+No paths to report.
+
+
++------------------------------------------------------+
+; Minimum Pulse Width Summary                          ;
++-----------------------------+--------+---------------+
+; Clock                       ; Slack  ; End Point TNS ;
++-----------------------------+--------+---------------+
+; Clock                       ; -2.289 ; -2.289        ;
+; 74163:inst29|f74163:sub|134 ; 0.234  ; 0.000         ;
++-----------------------------+--------+---------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'Clock'                                                                                                                                          ;
++--------+-----------------------------+-----------------------------+-----------------------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                   ; To Node                     ; Launch Clock                ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------+-----------------------------+-----------------------------+-------------+--------------+------------+------------+
+; -4.513 ; 74163:inst28|f74163:sub|122 ; inst24                      ; Clock                       ; Clock       ; 1.000        ; -2.664     ; 2.516      ;
+; -3.611 ; 74163:inst29|f74163:sub|111 ; 74163:inst29|f74163:sub|122 ; Clock                       ; Clock       ; 1.000        ; 0.000      ; 4.278      ;
+; -3.239 ; 74163:inst29|f74163:sub|34  ; 74163:inst29|f74163:sub|122 ; Clock                       ; Clock       ; 1.000        ; 0.000      ; 3.906      ;
+; -2.808 ; 74163:inst28|f74163:sub|34  ; 74163:inst28|f74163:sub|122 ; Clock                       ; Clock       ; 1.000        ; 0.000      ; 3.475      ;
+; -2.649 ; 74163:inst29|f74163:sub|122 ; 74163:inst29|f74163:sub|122 ; Clock                       ; Clock       ; 1.000        ; 0.000      ; 3.316      ;
+; -2.598 ; 74163:inst29|f74163:sub|111 ; 74163:inst29|f74163:sub|134 ; Clock                       ; Clock       ; 1.000        ; 0.000      ; 3.265      ;
+; -2.420 ; 74163:inst28|f74163:sub|111 ; 74163:inst28|f74163:sub|122 ; Clock                       ; Clock       ; 1.000        ; 0.000      ; 3.087      ;
+; -2.226 ; 74163:inst29|f74163:sub|34  ; 74163:inst29|f74163:sub|134 ; Clock                       ; Clock       ; 1.000        ; 0.000      ; 2.893      ;
+; -2.114 ; inst24                      ; inst24                      ; Clock                       ; Clock       ; 1.000        ; 0.000      ; 2.781      ;
+; -2.109 ; 74163:inst28|f74163:sub|34  ; 74163:inst28|f74163:sub|111 ; Clock                       ; Clock       ; 1.000        ; 0.000      ; 2.776      ;
+; -2.086 ; 74163:inst29|f74163:sub|122 ; 74163:inst29|f74163:sub|134 ; Clock                       ; Clock       ; 1.000        ; 0.000      ; 2.753      ;
+; -2.084 ; 74163:inst29|f74163:sub|111 ; 74163:inst29|f74163:sub|111 ; Clock                       ; Clock       ; 1.000        ; 0.000      ; 2.751      ;
+; -1.979 ; 74163:inst30|f74163:sub|111 ; inst24                      ; 74163:inst29|f74163:sub|134 ; Clock       ; 1.000        ; 0.151      ; 2.797      ;
+; -1.924 ; 74163:inst30|f74163:sub|134 ; inst24                      ; 74163:inst29|f74163:sub|134 ; Clock       ; 1.000        ; 0.151      ; 2.742      ;
+; -1.901 ; 74163:inst29|f74163:sub|34  ; 74163:inst29|f74163:sub|34  ; Clock                       ; Clock       ; 1.000        ; 0.000      ; 2.568      ;
+; -1.814 ; 74163:inst28|f74163:sub|34  ; 74163:inst28|f74163:sub|34  ; Clock                       ; Clock       ; 1.000        ; 0.000      ; 2.481      ;
+; -1.724 ; 74163:inst29|f74163:sub|34  ; 74163:inst29|f74163:sub|111 ; Clock                       ; Clock       ; 1.000        ; 0.000      ; 2.391      ;
+; -1.721 ; 74163:inst28|f74163:sub|111 ; 74163:inst28|f74163:sub|111 ; Clock                       ; Clock       ; 1.000        ; 0.000      ; 2.388      ;
+; -1.193 ; 74163:inst28|f74163:sub|122 ; 74163:inst28|f74163:sub|122 ; Clock                       ; Clock       ; 1.000        ; 0.000      ; 1.860      ;
+; -0.785 ; 74163:inst30|f74163:sub|134 ; 74163:inst29|f74163:sub|34  ; 74163:inst29|f74163:sub|134 ; Clock       ; 1.000        ; 2.831      ; 4.283      ;
+; -0.726 ; 74163:inst30|f74163:sub|111 ; 74163:inst29|f74163:sub|34  ; 74163:inst29|f74163:sub|134 ; Clock       ; 1.000        ; 2.831      ; 4.224      ;
+; -0.688 ; 74163:inst30|f74163:sub|111 ; 74163:inst29|f74163:sub|134 ; 74163:inst29|f74163:sub|134 ; Clock       ; 1.000        ; 2.831      ; 4.186      ;
+; -0.633 ; 74163:inst30|f74163:sub|134 ; 74163:inst29|f74163:sub|134 ; 74163:inst29|f74163:sub|134 ; Clock       ; 1.000        ; 2.831      ; 4.131      ;
+; -0.483 ; 74163:inst30|f74163:sub|134 ; 74163:inst29|f74163:sub|122 ; 74163:inst29|f74163:sub|134 ; Clock       ; 1.000        ; 2.831      ; 3.981      ;
+; -0.482 ; 74163:inst30|f74163:sub|134 ; 74163:inst29|f74163:sub|111 ; 74163:inst29|f74163:sub|134 ; Clock       ; 1.000        ; 2.831      ; 3.980      ;
+; -0.424 ; 74163:inst30|f74163:sub|111 ; 74163:inst29|f74163:sub|122 ; 74163:inst29|f74163:sub|134 ; Clock       ; 1.000        ; 2.831      ; 3.922      ;
+; -0.423 ; 74163:inst30|f74163:sub|111 ; 74163:inst29|f74163:sub|111 ; 74163:inst29|f74163:sub|134 ; Clock       ; 1.000        ; 2.831      ; 3.921      ;
+; 2.265  ; 74163:inst29|f74163:sub|134 ; 74163:inst29|f74163:sub|34  ; 74163:inst29|f74163:sub|134 ; Clock       ; 0.500        ; 6.510      ; 4.788      ;
+; 2.567  ; 74163:inst29|f74163:sub|134 ; 74163:inst29|f74163:sub|122 ; 74163:inst29|f74163:sub|134 ; Clock       ; 0.500        ; 6.510      ; 4.486      ;
+; 2.568  ; 74163:inst29|f74163:sub|134 ; 74163:inst29|f74163:sub|111 ; 74163:inst29|f74163:sub|134 ; Clock       ; 0.500        ; 6.510      ; 4.485      ;
+; 2.765  ; 74163:inst29|f74163:sub|134 ; 74163:inst29|f74163:sub|34  ; 74163:inst29|f74163:sub|134 ; Clock       ; 1.000        ; 6.510      ; 4.788      ;
+; 3.067  ; 74163:inst29|f74163:sub|134 ; 74163:inst29|f74163:sub|122 ; 74163:inst29|f74163:sub|134 ; Clock       ; 1.000        ; 6.510      ; 4.486      ;
+; 3.068  ; 74163:inst29|f74163:sub|134 ; 74163:inst29|f74163:sub|111 ; 74163:inst29|f74163:sub|134 ; Clock       ; 1.000        ; 6.510      ; 4.485      ;
+; 4.470  ; 74163:inst29|f74163:sub|134 ; 74163:inst29|f74163:sub|134 ; 74163:inst29|f74163:sub|134 ; Clock       ; 0.500        ; 6.510      ; 2.583      ;
+; 4.970  ; 74163:inst29|f74163:sub|134 ; 74163:inst29|f74163:sub|134 ; 74163:inst29|f74163:sub|134 ; Clock       ; 1.000        ; 6.510      ; 2.583      ;
++--------+-----------------------------+-----------------------------+-----------------------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: '74163:inst29|f74163:sub|134'                                                                                                                                    ;
++--------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+; Slack  ; From Node                   ; To Node                     ; Launch Clock                ; Latch Clock                 ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+; -3.244 ; 74163:inst30|f74163:sub|34  ; 74163:inst30|f74163:sub|111 ; 74163:inst29|f74163:sub|134 ; 74163:inst29|f74163:sub|134 ; 1.000        ; 0.000      ; 3.911      ;
+; -3.024 ; 74163:inst30|f74163:sub|111 ; 74163:inst30|f74163:sub|134 ; 74163:inst29|f74163:sub|134 ; 74163:inst29|f74163:sub|134 ; 1.000        ; 0.000      ; 3.691      ;
+; -2.966 ; 74163:inst30|f74163:sub|111 ; 74163:inst30|f74163:sub|111 ; 74163:inst29|f74163:sub|134 ; 74163:inst29|f74163:sub|134 ; 1.000        ; 0.000      ; 3.633      ;
+; -2.839 ; 74163:inst30|f74163:sub|111 ; 74163:inst30|f74163:sub|122 ; 74163:inst29|f74163:sub|134 ; 74163:inst29|f74163:sub|134 ; 1.000        ; 0.000      ; 3.506      ;
+; -2.835 ; 74163:inst30|f74163:sub|111 ; 74163:inst30|f74163:sub|34  ; 74163:inst29|f74163:sub|134 ; 74163:inst29|f74163:sub|134 ; 1.000        ; 0.000      ; 3.502      ;
+; -2.784 ; 74163:inst30|f74163:sub|134 ; 74163:inst30|f74163:sub|122 ; 74163:inst29|f74163:sub|134 ; 74163:inst29|f74163:sub|134 ; 1.000        ; 0.000      ; 3.451      ;
+; -2.784 ; 74163:inst30|f74163:sub|134 ; 74163:inst30|f74163:sub|111 ; 74163:inst29|f74163:sub|134 ; 74163:inst29|f74163:sub|134 ; 1.000        ; 0.000      ; 3.451      ;
+; -2.780 ; 74163:inst30|f74163:sub|134 ; 74163:inst30|f74163:sub|34  ; 74163:inst29|f74163:sub|134 ; 74163:inst29|f74163:sub|134 ; 1.000        ; 0.000      ; 3.447      ;
+; -2.668 ; 74163:inst30|f74163:sub|34  ; 74163:inst30|f74163:sub|134 ; 74163:inst29|f74163:sub|134 ; 74163:inst29|f74163:sub|134 ; 1.000        ; 0.000      ; 3.335      ;
+; -2.420 ; 74163:inst30|f74163:sub|122 ; 74163:inst30|f74163:sub|134 ; 74163:inst29|f74163:sub|134 ; 74163:inst29|f74163:sub|134 ; 1.000        ; 0.000      ; 3.087      ;
+; -2.414 ; 74163:inst30|f74163:sub|122 ; 74163:inst30|f74163:sub|122 ; 74163:inst29|f74163:sub|134 ; 74163:inst29|f74163:sub|134 ; 1.000        ; 0.000      ; 3.081      ;
+; -2.237 ; 74163:inst30|f74163:sub|34  ; 74163:inst30|f74163:sub|122 ; 74163:inst29|f74163:sub|134 ; 74163:inst29|f74163:sub|134 ; 1.000        ; 0.000      ; 2.904      ;
+; -2.102 ; 74163:inst30|f74163:sub|134 ; 74163:inst30|f74163:sub|134 ; 74163:inst29|f74163:sub|134 ; 74163:inst29|f74163:sub|134 ; 1.000        ; 0.000      ; 2.769      ;
+; -1.691 ; 74163:inst30|f74163:sub|34  ; 74163:inst30|f74163:sub|34  ; 74163:inst29|f74163:sub|134 ; 74163:inst29|f74163:sub|134 ; 1.000        ; 0.000      ; 2.358      ;
++--------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'Clock'                                                                                                                                           ;
++--------+-----------------------------+-----------------------------+-----------------------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                   ; To Node                     ; Launch Clock                ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------------------+-----------------------------+-----------------------------+-------------+--------------+------------+------------+
+; -4.524 ; 74163:inst29|f74163:sub|134 ; 74163:inst29|f74163:sub|134 ; 74163:inst29|f74163:sub|134 ; Clock       ; 0.000        ; 6.510      ; 2.583      ;
+; -4.024 ; 74163:inst29|f74163:sub|134 ; 74163:inst29|f74163:sub|134 ; 74163:inst29|f74163:sub|134 ; Clock       ; -0.500       ; 6.510      ; 2.583      ;
+; -2.622 ; 74163:inst29|f74163:sub|134 ; 74163:inst29|f74163:sub|111 ; 74163:inst29|f74163:sub|134 ; Clock       ; 0.000        ; 6.510      ; 4.485      ;
+; -2.621 ; 74163:inst29|f74163:sub|134 ; 74163:inst29|f74163:sub|122 ; 74163:inst29|f74163:sub|134 ; Clock       ; 0.000        ; 6.510      ; 4.486      ;
+; -2.319 ; 74163:inst29|f74163:sub|134 ; 74163:inst29|f74163:sub|34  ; 74163:inst29|f74163:sub|134 ; Clock       ; 0.000        ; 6.510      ; 4.788      ;
+; -2.122 ; 74163:inst29|f74163:sub|134 ; 74163:inst29|f74163:sub|111 ; 74163:inst29|f74163:sub|134 ; Clock       ; -0.500       ; 6.510      ; 4.485      ;
+; -2.121 ; 74163:inst29|f74163:sub|134 ; 74163:inst29|f74163:sub|122 ; 74163:inst29|f74163:sub|134 ; Clock       ; -0.500       ; 6.510      ; 4.486      ;
+; -1.819 ; 74163:inst29|f74163:sub|134 ; 74163:inst29|f74163:sub|34  ; 74163:inst29|f74163:sub|134 ; Clock       ; -0.500       ; 6.510      ; 4.788      ;
+; 0.869  ; 74163:inst30|f74163:sub|111 ; 74163:inst29|f74163:sub|111 ; 74163:inst29|f74163:sub|134 ; Clock       ; 0.000        ; 2.831      ; 3.921      ;
+; 0.870  ; 74163:inst30|f74163:sub|111 ; 74163:inst29|f74163:sub|122 ; 74163:inst29|f74163:sub|134 ; Clock       ; 0.000        ; 2.831      ; 3.922      ;
+; 0.928  ; 74163:inst30|f74163:sub|134 ; 74163:inst29|f74163:sub|111 ; 74163:inst29|f74163:sub|134 ; Clock       ; 0.000        ; 2.831      ; 3.980      ;
+; 0.929  ; 74163:inst30|f74163:sub|134 ; 74163:inst29|f74163:sub|122 ; 74163:inst29|f74163:sub|134 ; Clock       ; 0.000        ; 2.831      ; 3.981      ;
+; 1.079  ; 74163:inst30|f74163:sub|134 ; 74163:inst29|f74163:sub|134 ; 74163:inst29|f74163:sub|134 ; Clock       ; 0.000        ; 2.831      ; 4.131      ;
+; 1.134  ; 74163:inst30|f74163:sub|111 ; 74163:inst29|f74163:sub|134 ; 74163:inst29|f74163:sub|134 ; Clock       ; 0.000        ; 2.831      ; 4.186      ;
+; 1.172  ; 74163:inst30|f74163:sub|111 ; 74163:inst29|f74163:sub|34  ; 74163:inst29|f74163:sub|134 ; Clock       ; 0.000        ; 2.831      ; 4.224      ;
+; 1.231  ; 74163:inst30|f74163:sub|134 ; 74163:inst29|f74163:sub|34  ; 74163:inst29|f74163:sub|134 ; Clock       ; 0.000        ; 2.831      ; 4.283      ;
+; 1.639  ; 74163:inst28|f74163:sub|122 ; 74163:inst28|f74163:sub|122 ; Clock                       ; Clock       ; 0.000        ; 0.000      ; 1.860      ;
+; 2.167  ; 74163:inst28|f74163:sub|111 ; 74163:inst28|f74163:sub|111 ; Clock                       ; Clock       ; 0.000        ; 0.000      ; 2.388      ;
+; 2.170  ; 74163:inst29|f74163:sub|34  ; 74163:inst29|f74163:sub|111 ; Clock                       ; Clock       ; 0.000        ; 0.000      ; 2.391      ;
+; 2.260  ; 74163:inst28|f74163:sub|34  ; 74163:inst28|f74163:sub|34  ; Clock                       ; Clock       ; 0.000        ; 0.000      ; 2.481      ;
+; 2.347  ; 74163:inst29|f74163:sub|34  ; 74163:inst29|f74163:sub|34  ; Clock                       ; Clock       ; 0.000        ; 0.000      ; 2.568      ;
+; 2.370  ; 74163:inst30|f74163:sub|134 ; inst24                      ; 74163:inst29|f74163:sub|134 ; Clock       ; 0.000        ; 0.151      ; 2.742      ;
+; 2.425  ; 74163:inst30|f74163:sub|111 ; inst24                      ; 74163:inst29|f74163:sub|134 ; Clock       ; 0.000        ; 0.151      ; 2.797      ;
+; 2.530  ; 74163:inst29|f74163:sub|111 ; 74163:inst29|f74163:sub|111 ; Clock                       ; Clock       ; 0.000        ; 0.000      ; 2.751      ;
+; 2.532  ; 74163:inst29|f74163:sub|122 ; 74163:inst29|f74163:sub|134 ; Clock                       ; Clock       ; 0.000        ; 0.000      ; 2.753      ;
+; 2.555  ; 74163:inst28|f74163:sub|34  ; 74163:inst28|f74163:sub|111 ; Clock                       ; Clock       ; 0.000        ; 0.000      ; 2.776      ;
+; 2.560  ; inst24                      ; inst24                      ; Clock                       ; Clock       ; 0.000        ; 0.000      ; 2.781      ;
+; 2.672  ; 74163:inst29|f74163:sub|34  ; 74163:inst29|f74163:sub|134 ; Clock                       ; Clock       ; 0.000        ; 0.000      ; 2.893      ;
+; 2.866  ; 74163:inst28|f74163:sub|111 ; 74163:inst28|f74163:sub|122 ; Clock                       ; Clock       ; 0.000        ; 0.000      ; 3.087      ;
+; 3.044  ; 74163:inst29|f74163:sub|111 ; 74163:inst29|f74163:sub|134 ; Clock                       ; Clock       ; 0.000        ; 0.000      ; 3.265      ;
+; 3.095  ; 74163:inst29|f74163:sub|122 ; 74163:inst29|f74163:sub|122 ; Clock                       ; Clock       ; 0.000        ; 0.000      ; 3.316      ;
+; 3.254  ; 74163:inst28|f74163:sub|34  ; 74163:inst28|f74163:sub|122 ; Clock                       ; Clock       ; 0.000        ; 0.000      ; 3.475      ;
+; 3.685  ; 74163:inst29|f74163:sub|34  ; 74163:inst29|f74163:sub|122 ; Clock                       ; Clock       ; 0.000        ; 0.000      ; 3.906      ;
+; 4.057  ; 74163:inst29|f74163:sub|111 ; 74163:inst29|f74163:sub|122 ; Clock                       ; Clock       ; 0.000        ; 0.000      ; 4.278      ;
+; 4.959  ; 74163:inst28|f74163:sub|122 ; inst24                      ; Clock                       ; Clock       ; 0.000        ; -2.664     ; 2.516      ;
++--------+-----------------------------+-----------------------------+-----------------------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: '74163:inst29|f74163:sub|134'                                                                                                                                    ;
++-------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+; Slack ; From Node                   ; To Node                     ; Launch Clock                ; Latch Clock                 ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+; 2.137 ; 74163:inst30|f74163:sub|34  ; 74163:inst30|f74163:sub|34  ; 74163:inst29|f74163:sub|134 ; 74163:inst29|f74163:sub|134 ; 0.000        ; 0.000      ; 2.358      ;
+; 2.548 ; 74163:inst30|f74163:sub|134 ; 74163:inst30|f74163:sub|134 ; 74163:inst29|f74163:sub|134 ; 74163:inst29|f74163:sub|134 ; 0.000        ; 0.000      ; 2.769      ;
+; 2.683 ; 74163:inst30|f74163:sub|34  ; 74163:inst30|f74163:sub|122 ; 74163:inst29|f74163:sub|134 ; 74163:inst29|f74163:sub|134 ; 0.000        ; 0.000      ; 2.904      ;
+; 2.860 ; 74163:inst30|f74163:sub|122 ; 74163:inst30|f74163:sub|122 ; 74163:inst29|f74163:sub|134 ; 74163:inst29|f74163:sub|134 ; 0.000        ; 0.000      ; 3.081      ;
+; 2.866 ; 74163:inst30|f74163:sub|122 ; 74163:inst30|f74163:sub|134 ; 74163:inst29|f74163:sub|134 ; 74163:inst29|f74163:sub|134 ; 0.000        ; 0.000      ; 3.087      ;
+; 2.973 ; 74163:inst30|f74163:sub|111 ; 74163:inst30|f74163:sub|134 ; 74163:inst29|f74163:sub|134 ; 74163:inst29|f74163:sub|134 ; 0.000        ; 0.000      ; 3.194      ;
+; 3.039 ; 74163:inst30|f74163:sub|111 ; 74163:inst30|f74163:sub|122 ; 74163:inst29|f74163:sub|134 ; 74163:inst29|f74163:sub|134 ; 0.000        ; 0.000      ; 3.260      ;
+; 3.114 ; 74163:inst30|f74163:sub|34  ; 74163:inst30|f74163:sub|134 ; 74163:inst29|f74163:sub|134 ; 74163:inst29|f74163:sub|134 ; 0.000        ; 0.000      ; 3.335      ;
+; 3.226 ; 74163:inst30|f74163:sub|134 ; 74163:inst30|f74163:sub|34  ; 74163:inst29|f74163:sub|134 ; 74163:inst29|f74163:sub|134 ; 0.000        ; 0.000      ; 3.447      ;
+; 3.230 ; 74163:inst30|f74163:sub|134 ; 74163:inst30|f74163:sub|122 ; 74163:inst29|f74163:sub|134 ; 74163:inst29|f74163:sub|134 ; 0.000        ; 0.000      ; 3.451      ;
+; 3.230 ; 74163:inst30|f74163:sub|134 ; 74163:inst30|f74163:sub|111 ; 74163:inst29|f74163:sub|134 ; 74163:inst29|f74163:sub|134 ; 0.000        ; 0.000      ; 3.451      ;
+; 3.281 ; 74163:inst30|f74163:sub|111 ; 74163:inst30|f74163:sub|34  ; 74163:inst29|f74163:sub|134 ; 74163:inst29|f74163:sub|134 ; 0.000        ; 0.000      ; 3.502      ;
+; 3.285 ; 74163:inst30|f74163:sub|111 ; 74163:inst30|f74163:sub|111 ; 74163:inst29|f74163:sub|134 ; 74163:inst29|f74163:sub|134 ; 0.000        ; 0.000      ; 3.506      ;
+; 3.690 ; 74163:inst30|f74163:sub|34  ; 74163:inst30|f74163:sub|111 ; 74163:inst29|f74163:sub|134 ; 74163:inst29|f74163:sub|134 ; 0.000        ; 0.000      ; 3.911      ;
++-------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------+
+; Setup Transfers                                                                                       ;
++-----------------------------+-----------------------------+----------+----------+----------+----------+
+; From Clock                  ; To Clock                    ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++-----------------------------+-----------------------------+----------+----------+----------+----------+
+; 74163:inst29|f74163:sub|134 ; 74163:inst29|f74163:sub|134 ; 17       ; 0        ; 0        ; 0        ;
+; 74163:inst29|f74163:sub|134 ; Clock                       ; 14       ; 4        ; 0        ; 0        ;
+; Clock                       ; Clock                       ; 17       ; 0        ; 0        ; 0        ;
++-----------------------------+-----------------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------------------------------------------+
+; Hold Transfers                                                                                        ;
++-----------------------------+-----------------------------+----------+----------+----------+----------+
+; From Clock                  ; To Clock                    ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++-----------------------------+-----------------------------+----------+----------+----------+----------+
+; 74163:inst29|f74163:sub|134 ; 74163:inst29|f74163:sub|134 ; 17       ; 0        ; 0        ; 0        ;
+; 74163:inst29|f74163:sub|134 ; Clock                       ; 14       ; 4        ; 0        ; 0        ;
+; Clock                       ; Clock                       ; 17       ; 0        ; 0        ; 0        ;
++-----------------------------+-----------------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No non-DPA dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths Summary                    ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 2     ; 2    ;
+; Unconstrained Input Port Paths  ; 13    ; 13   ;
+; Unconstrained Output Ports      ; 6     ; 6    ;
+; Unconstrained Output Port Paths ; 7     ; 7    ;
++---------------------------------+-------+------+
+
+
++--------------------------------------------------------------------------------+
+; Clock Status Summary                                                           ;
++-----------------------------+-----------------------------+------+-------------+
+; Target                      ; Clock                       ; Type ; Status      ;
++-----------------------------+-----------------------------+------+-------------+
+; 74163:inst29|f74163:sub|134 ; 74163:inst29|f74163:sub|134 ; Base ; Constrained ;
+; Clock                       ; Clock                       ; Base ; Constrained ;
++-----------------------------+-----------------------------+------+-------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                         ;
++------------+--------------------------------------------------------------------------------------+
+; Input Port ; Comment                                                                              ;
++------------+--------------------------------------------------------------------------------------+
+; Reset      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Serial     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; HighAfter10 ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SerialOut   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; pin_name1   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; pin_name2   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; pin_name3   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; pin_name4   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                         ;
++------------+--------------------------------------------------------------------------------------+
+; Input Port ; Comment                                                                              ;
++------------+--------------------------------------------------------------------------------------+
+; Reset      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; Serial     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; HighAfter10 ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; SerialOut   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; pin_name1   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; pin_name2   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; pin_name3   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; pin_name4   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Timing Analyzer
+    Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
+    Info: Processing started: Thu Nov  9 14:12:25 2023
+Info: Command: quartus_sta ControlSystem -c ControlSystem
+Info: qsta_default_script.tcl version: #1
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Warning (335093): The Timing Analyzer is analyzing 1 combinational loops as latches. For more details, run the Check Timing command in the Timing Analyzer or view the "User-Specified and Inferred Latches" table in the Analysis & Synthesis report.
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'ControlSystem.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name Clock Clock
+    Info (332105): create_clock -period 1.000 -name 74163:inst29|f74163:sub|134 74163:inst29|f74163:sub|134
+Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -4.513
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -4.513             -21.438 Clock 
+    Info (332119):    -3.244             -11.942 74163:inst29|f74163:sub|134 
+Info (332146): Worst-case hold slack is -4.524
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -4.524             -12.086 Clock 
+    Info (332119):     2.137               0.000 74163:inst29|f74163:sub|134 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -2.289
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -2.289              -2.289 Clock 
+    Info (332119):     0.234               0.000 74163:inst29|f74163:sub|134 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus Prime Timing Analyzer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 343 megabytes
+    Info: Processing ended: Thu Nov  9 14:12:26 2023
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+

@@ -1,0 +1,59 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/joel/Documents/Quartus/ControlSystem/simulation/qsim
+vControlSystem
+Z1 !s110 1699539452
+!i10b 1
+!s100 QE1`_FknB41l]c1V7_@_P1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I9Ffe4LBlOL@XM?i_LGN:B0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1699539452
+8ControlSystem.vo
+FControlSystem.vo
+!i122 124
+L0 32 1166
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1699539452.000000
+!s107 ControlSystem.vo|
+!s90 -work|work|ControlSystem.vo|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+n@control@system
+vControlSystem_vlg_vec_tst
+R1
+!i10b 1
+!s100 BU;WYSnZ6Nn[cP;_=2>@O0
+R2
+InL=GT_CZ69Z^3W?W4@65<1
+R3
+R0
+w1699539451
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+!i122 125
+L0 30 55
+R4
+r1
+!s85 0
+31
+R5
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R6
+R7
+n@control@system_vlg_vec_tst

@@ -1,0 +1,161 @@
+// Copyright (C) 2023  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and any partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details, at
+// https://fpgasoftware.intel.com/eula.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition"
+
+// DATE "11/07/2023 13:40:55"
+
+// 
+// Device: Altera EPM240T100C5 Package TQFP100
+// 
+
+// 
+// This Verilog file should be used for Questa Intel FPGA (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module ClockDivider (
+	pin_name2,
+	pin_name1,
+	pin_name3);
+output 	pin_name2;
+input 	pin_name1;
+output 	pin_name3;
+
+// Design Ports Information
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \pin_name1~combout ;
+wire \inst~regout ;
+wire \inst1~regout ;
+
+
+// Location: PIN_74,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \pin_name1~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\pin_name1~combout ),
+	.padio(pin_name1));
+// synopsys translate_off
+defparam \pin_name1~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: LC_X7_Y4_N4
+maxii_lcell inst(
+// Equation(s):
+// \inst~regout  = DFFEAS((((!\inst~regout ))), \pin_name1~combout , VCC, , , , , , )
+
+	.clk(\pin_name1~combout ),
+	.dataa(vcc),
+	.datab(vcc),
+	.datac(\inst~regout ),
+	.datad(vcc),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(),
+	.regout(\inst~regout ),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam inst.lut_mask = "0f0f";
+defparam inst.operation_mode = "normal";
+defparam inst.output_mode = "reg_only";
+defparam inst.register_cascade_mode = "off";
+defparam inst.sum_lutc_input = "datac";
+defparam inst.synch_mode = "off";
+// synopsys translate_on
+
+// Location: LC_X7_Y4_N2
+maxii_lcell inst1(
+// Equation(s):
+// \inst1~regout  = DFFEAS((((!\inst1~regout ))), \inst~regout , VCC, , , , , , )
+
+	.clk(\inst~regout ),
+	.dataa(vcc),
+	.datab(vcc),
+	.datac(vcc),
+	.datad(\inst1~regout ),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(),
+	.regout(\inst1~regout ),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam inst1.lut_mask = "00ff";
+defparam inst1.operation_mode = "normal";
+defparam inst1.output_mode = "reg_only";
+defparam inst1.register_cascade_mode = "off";
+defparam inst1.sum_lutc_input = "datac";
+defparam inst1.synch_mode = "off";
+// synopsys translate_on
+
+// Location: PIN_71,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxii_io \pin_name2~I (
+	.datain(\inst1~regout ),
+	.oe(vcc),
+	.combout(),
+	.padio(pin_name2));
+// synopsys translate_off
+defparam \pin_name2~I .operation_mode = "output";
+// synopsys translate_on
+
+// Location: PIN_73,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxii_io \pin_name3~I (
+	.datain(\inst~regout ),
+	.oe(vcc),
+	.combout(),
+	.padio(pin_name3));
+// synopsys translate_off
+defparam \pin_name3~I .operation_mode = "output";
+// synopsys translate_on
+
+endmodule

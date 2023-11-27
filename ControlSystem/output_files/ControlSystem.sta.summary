@@ -1,0 +1,29 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Setup 'Clock'
+Slack : -4.513
+TNS   : -21.438
+
+Type  : Setup '74163:inst29|f74163:sub|134'
+Slack : -3.244
+TNS   : -11.942
+
+Type  : Hold 'Clock'
+Slack : -4.524
+TNS   : -12.086
+
+Type  : Hold '74163:inst29|f74163:sub|134'
+Slack : 2.137
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'Clock'
+Slack : -2.289
+TNS   : -2.289
+
+Type  : Minimum Pulse Width '74163:inst29|f74163:sub|134'
+Slack : 0.234
+TNS   : 0.000
+
+------------------------------------------------------------

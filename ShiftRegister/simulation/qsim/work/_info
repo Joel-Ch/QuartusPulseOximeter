@@ -1,0 +1,59 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/joel/Documents/Quartus/ShiftRegister/simulation/qsim
+vShiftRegister
+Z1 !s110 1701083131
+!i10b 1
+!s100 jlzB7zV0oPZUR7fOQGLkk3
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IYIZIm7R8L3>I3IE]RH8f53
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1701083131
+8ShiftRegister.vo
+FShiftRegister.vo
+!i122 26
+L0 32 867
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1701083131.000000
+!s107 ShiftRegister.vo|
+!s90 -work|work|ShiftRegister.vo|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+n@shift@register
+vShiftRegister_vlg_vec_tst
+R1
+!i10b 1
+!s100 1DR4fXL]IAz7cU3USP=Y_3
+R2
+IbhPWZSG]]W3bZ9]=NPGk]2
+R3
+R0
+w1701083130
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+!i122 27
+L0 30 123
+R4
+r1
+!s85 0
+31
+R5
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R6
+R7
+n@shift@register_vlg_vec_tst

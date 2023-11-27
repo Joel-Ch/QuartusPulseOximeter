@@ -1,0 +1,6 @@
+|ClockDivider
+pin_name2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+pin_name1 => inst.CLK
+pin_name3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+

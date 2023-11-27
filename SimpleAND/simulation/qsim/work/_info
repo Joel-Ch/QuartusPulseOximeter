@@ -1,0 +1,59 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/joel/Documents/Quartus/SimpleAND/simulation/qsim
+vSimpleAnd
+Z1 !s110 1699272485
+!i10b 1
+!s100 S2b<dl`0zSY@Vm[V^CcJC3
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+ICfoEBl;S<:LVA_T?e[d0>3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1699272484
+8SimpleAnd.vo
+FSimpleAnd.vo
+!i122 0
+L0 32 94
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1699272485.000000
+!s107 SimpleAnd.vo|
+!s90 -work|work|SimpleAnd.vo|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+n@simple@and
+vSimpleAnd_vlg_vec_tst
+R1
+!i10b 1
+!s100 62d2[Gb1?OS>G=dA2iTA30
+R2
+IGFE0=TLA6>3`_f8eF3NLa0
+R3
+R0
+w1699272483
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+!i122 1
+L0 30 133
+R4
+r1
+!s85 0
+31
+R5
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R6
+R7
+n@simple@and_vlg_vec_tst

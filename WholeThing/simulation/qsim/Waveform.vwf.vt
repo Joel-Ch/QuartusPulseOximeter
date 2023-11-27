@@ -1,0 +1,142 @@
+// Copyright (C) 2023  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and any partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details, at
+// https://fpgasoftware.intel.com/eula.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "11/27/2023 15:21:07"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          WholeThing
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module WholeThing_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg HighFreqClock;
+reg Reset;
+reg Serial;
+reg ShiftRegisterReset;
+// wires                                               
+wire A_out;
+wire A_out2;
+wire B_out;
+wire B_out2;
+wire BigReset;
+wire C_out;
+wire C_out2;
+wire CLEAR;
+wire CLOCK;
+wire Count8;
+wire D_out;
+wire D_out2;
+wire E_out;
+wire E_out2;
+wire F_out;
+wire F_out2;
+wire G_out;
+wire G_out2;
+wire HighAfter10;
+wire LowFor4;
+wire LowFor4Latched;
+wire S;
+wire SerialOut;
+wire T;
+wire U;
+wire V;
+wire W;
+wire X;
+wire Y;
+wire Z;
+
+// assign statements (if any)                          
+WholeThing i1 (
+// port map - connection between master ports and signals/registers   
+	.A_out(A_out),
+	.A_out2(A_out2),
+	.B_out(B_out),
+	.B_out2(B_out2),
+	.BigReset(BigReset),
+	.C_out(C_out),
+	.C_out2(C_out2),
+	.CLEAR(CLEAR),
+	.CLOCK(CLOCK),
+	.Count8(Count8),
+	.D_out(D_out),
+	.D_out2(D_out2),
+	.E_out(E_out),
+	.E_out2(E_out2),
+	.F_out(F_out),
+	.F_out2(F_out2),
+	.G_out(G_out),
+	.G_out2(G_out2),
+	.HighAfter10(HighAfter10),
+	.HighFreqClock(HighFreqClock),
+	.LowFor4(LowFor4),
+	.LowFor4Latched(LowFor4Latched),
+	.Reset(Reset),
+	.S(S),
+	.Serial(Serial),
+	.SerialOut(SerialOut),
+	.ShiftRegisterReset(ShiftRegisterReset),
+	.T(T),
+	.U(U),
+	.V(V),
+	.W(W),
+	.X(X),
+	.Y(Y),
+	.Z(Z)
+);
+initial 
+begin 
+#1000000 $finish;
+end 
+
+// HighFreqClock
+always
+begin
+	HighFreqClock = 1'b0;
+	HighFreqClock = #500 1'b1;
+	#500;
+end 
+
+// Serial
+initial
+begin
+	Serial = 1'b0;
+	Serial = #128000 1'b1;
+	Serial = #128000 1'b0;
+	Serial = #128000 1'b1;
+	Serial = #512000 1'b0;
+end 
+
+// ShiftRegisterReset
+initial
+begin
+	ShiftRegisterReset = 1'b0;
+end 
+
+// Reset
+initial
+begin
+	Reset = 1'b0;
+end 
+endmodule
+

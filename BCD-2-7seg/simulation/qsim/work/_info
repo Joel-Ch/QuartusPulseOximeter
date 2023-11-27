@@ -1,0 +1,59 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/joel/Documents/Quartus/BCD-2-7seg/simulation/qsim
+vBCD_2_7seg
+Z1 !s110 1699522497
+!i10b 1
+!s100 W:D5kZOAez^8m0doQlehn2
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IKkTemZ[DKfR8XN:nlj3WW1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1699522496
+8BCD_2_7seg.vo
+FBCD_2_7seg.vo
+!i122 16
+L0 32 809
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1699522497.000000
+!s107 BCD_2_7seg.vo|
+!s90 -work|work|BCD_2_7seg.vo|
+!i113 1
+Z7 o-work work
+Z8 tCvgOpt 0
+n@b@c@d_2_7seg
+vBCD_2_7seg_vlg_vec_tst
+R1
+!i10b 1
+!s100 ]L3@T296^`8PK^U^lfE?W0
+R2
+Ic6VOYM?EeW:=n4WLz;Xm`2
+R3
+R0
+R4
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+!i122 17
+L0 30 146
+R5
+r1
+!s85 0
+31
+R6
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R7
+R8
+n@b@c@d_2_7seg_vlg_vec_tst

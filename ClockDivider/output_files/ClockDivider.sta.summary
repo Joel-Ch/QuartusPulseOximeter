@@ -1,0 +1,29 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Setup 'inst'
+Slack : -1.194
+TNS   : -1.194
+
+Type  : Setup 'pin_name1'
+Slack : 1.662
+TNS   : 0.000
+
+Type  : Hold 'pin_name1'
+Slack : -1.716
+TNS   : -1.716
+
+Type  : Hold 'inst'
+Slack : 1.640
+TNS   : 0.000
+
+Type  : Minimum Pulse Width 'pin_name1'
+Slack : -2.289
+TNS   : -2.289
+
+Type  : Minimum Pulse Width 'inst'
+Slack : 0.234
+TNS   : 0.000
+
+------------------------------------------------------------
