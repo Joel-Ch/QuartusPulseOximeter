@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ControlSystem
-Thu Nov  9 14:12:21 2023
+Mon Nov 27 16:18:47 2023
 Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
@@ -15,9 +15,9 @@ Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. User-Specified and Inferred Latches
   9. General Register Statistics
- 10. Parameter Settings for User Entity Instance: 74163:inst28
- 11. Parameter Settings for User Entity Instance: 74163:inst30
- 12. Parameter Settings for User Entity Instance: 74163:inst29
+ 10. Parameter Settings for User Entity Instance: 74163:inst30
+ 11. Parameter Settings for User Entity Instance: 74163:inst29
+ 12. Parameter Settings for User Entity Instance: 74163:inst28
  13. Analysis & Synthesis Messages
 
 
@@ -45,13 +45,13 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +-----------------------------+------------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Thu Nov  9 14:12:21 2023          ;
+; Analysis & Synthesis Status ; Successful - Mon Nov 27 16:18:47 2023          ;
 ; Quartus Prime Version       ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
 ; Revision Name               ; ControlSystem                                  ;
 ; Top-level Entity Name       ; ControlSystem                                  ;
 ; Family                      ; MAX II                                         ;
-; Total logic elements        ; 28                                             ;
-; Total pins                  ; 9                                              ;
+; Total logic elements        ; 29                                             ;
+; Total pins                  ; 10                                             ;
 ; Total virtual pins          ; 0                                              ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                                  ;
 +-----------------------------+------------------------------------------------+
@@ -153,8 +153,6 @@ https://fpgasoftware.intel.com/eula.
 ; 74163.tdf                        ; yes             ; Megafunction                       ; /home/joel/intelFPGA_lite/22.1std/quartus/libraries/others/maxplus2/74163.tdf  ;         ;
 ; aglobal.inc                      ; yes             ; Megafunction                       ; /home/joel/intelFPGA_lite/22.1std/quartus/libraries/megafunctions/aglobal.inc  ;         ;
 ; f74163.bdf                       ; yes             ; Megafunction                       ; /home/joel/intelFPGA_lite/22.1std/quartus/libraries/others/maxplus2/f74163.bdf ;         ;
-; 74164.bdf                        ; yes             ; Megafunction                       ; /home/joel/intelFPGA_lite/22.1std/quartus/libraries/others/maxplus2/74164.bdf  ;         ;
-; 7449.bdf                         ; yes             ; Megafunction                       ; /home/joel/intelFPGA_lite/22.1std/quartus/libraries/others/maxplus2/7449.bdf   ;         ;
 +----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------+---------+
 
 
@@ -163,20 +161,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------------------------+
 ; Resource                                    ; Usage                       ;
 +---------------------------------------------+-----------------------------+
-; Total logic elements                        ; 28                          ;
-;     -- Combinational with no register       ; 16                          ;
+; Total logic elements                        ; 29                          ;
+;     -- Combinational with no register       ; 17                          ;
 ;     -- Register only                        ; 0                           ;
 ;     -- Combinational with a register        ; 12                          ;
 ;                                             ;                             ;
 ; Logic element usage by number of LUT inputs ;                             ;
-;     -- 4 input functions                    ; 2                           ;
-;     -- 3 input functions                    ; 5                           ;
-;     -- 2 input functions                    ; 21                          ;
+;     -- 4 input functions                    ; 6                           ;
+;     -- 3 input functions                    ; 3                           ;
+;     -- 2 input functions                    ; 20                          ;
 ;     -- 1 input functions                    ; 0                           ;
 ;     -- 0 input functions                    ; 0                           ;
 ;                                             ;                             ;
 ; Logic elements by mode                      ;                             ;
-;     -- normal mode                          ; 28                          ;
+;     -- normal mode                          ; 29                          ;
 ;     -- arithmetic mode                      ; 0                           ;
 ;     -- qfbk mode                            ; 0                           ;
 ;     -- register cascade mode                ; 0                           ;
@@ -184,11 +182,11 @@ https://fpgasoftware.intel.com/eula.
 ;     -- asynchronous clear/load mode         ; 0                           ;
 ;                                             ;                             ;
 ; Total registers                             ; 12                          ;
-; I/O pins                                    ; 9                           ;
-; Maximum fan-out node                        ; 74163:inst29|f74163:sub|134 ;
+; I/O pins                                    ; 10                          ;
+; Maximum fan-out node                        ; 74163:inst30|f74163:sub|111 ;
 ; Maximum fan-out                             ; 8                           ;
-; Total fan-out                               ; 83                          ;
-; Average fan-out                             ; 2.24                        ;
+; Total fan-out                               ; 92                          ;
+; Average fan-out                             ; 2.36                        ;
 +---------------------------------------------+-----------------------------+
 
 
@@ -197,9 +195,9 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+----------------------------------------+---------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                    ; Entity Name   ; Library Name ;
 +----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+----------------------------------------+---------------+--------------+
-; |ControlSystem             ; 28 (6)      ; 12           ; 0          ; 9    ; 0            ; 16 (5)       ; 0 (0)             ; 12 (1)           ; 0 (0)           ; 0 (0)      ; |ControlSystem                         ; ControlSystem ; work         ;
-;    |74163:inst28|          ; 5 (0)       ; 3            ; 0          ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 3 (0)            ; 0 (0)           ; 0 (0)      ; |ControlSystem|74163:inst28            ; 74163         ; work         ;
-;       |f74163:sub|         ; 5 (5)       ; 3            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 3 (3)            ; 0 (0)           ; 0 (0)      ; |ControlSystem|74163:inst28|f74163:sub ; f74163        ; work         ;
+; |ControlSystem             ; 29 (6)      ; 12           ; 0          ; 10   ; 0            ; 17 (5)       ; 0 (0)             ; 12 (1)           ; 0 (0)           ; 0 (0)      ; |ControlSystem                         ; ControlSystem ; work         ;
+;    |74163:inst28|          ; 6 (0)       ; 3            ; 0          ; 0    ; 0            ; 3 (0)        ; 0 (0)             ; 3 (0)            ; 0 (0)           ; 0 (0)      ; |ControlSystem|74163:inst28            ; 74163         ; work         ;
+;       |f74163:sub|         ; 6 (6)       ; 3            ; 0          ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 3 (3)            ; 0 (0)           ; 0 (0)      ; |ControlSystem|74163:inst28|f74163:sub ; f74163        ; work         ;
 ;    |74163:inst29|          ; 9 (0)       ; 4            ; 0          ; 0    ; 0            ; 5 (0)        ; 0 (0)             ; 4 (0)            ; 0 (0)           ; 0 (0)      ; |ControlSystem|74163:inst29            ; 74163         ; work         ;
 ;       |f74163:sub|         ; 9 (9)       ; 4            ; 0          ; 0    ; 0            ; 5 (5)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |ControlSystem|74163:inst29|f74163:sub ; f74163        ; work         ;
 ;    |74163:inst30|          ; 8 (0)       ; 4            ; 0          ; 0    ; 0            ; 4 (0)        ; 0 (0)             ; 4 (0)            ; 0 (0)           ; 0 (0)      ; |ControlSystem|74163:inst30            ; 74163         ; work         ;
@@ -213,7 +211,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------+-----------------------------+------------------------+
 ; Latch Name                                         ; Latch Enable Signal         ; Free of Timing Hazards ;
 +----------------------------------------------------+-----------------------------+------------------------+
-; inst35                                             ; 74163:inst29|f74163:sub|134 ; yes                    ;
+; inst96                                             ; 74163:inst29|f74163:sub|134 ; yes                    ;
 ; Number of user-specified and inferred latches = 1  ;                             ;                        ;
 +----------------------------------------------------+-----------------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
@@ -232,20 +230,6 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
-
-
-+-----------------------------------------------------------+
-; Parameter Settings for User Entity Instance: 74163:inst28 ;
-+------------------------+--------+-------------------------+
-; Parameter Name         ; Value  ; Type                    ;
-+------------------------+--------+-------------------------+
-; DEVICE_FAMILY          ; MAX II ; Untyped                 ;
-; AUTO_CARRY_CHAINS      ; ON     ; AUTO_CARRY              ;
-; IGNORE_CARRY_BUFFERS   ; OFF    ; IGNORE_CARRY            ;
-; AUTO_CASCADE_CHAINS    ; ON     ; AUTO_CASCADE            ;
-; IGNORE_CASCADE_BUFFERS ; OFF    ; IGNORE_CASCADE          ;
-+------------------------+--------+-------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +-----------------------------------------------------------+
@@ -276,13 +260,27 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: 74163:inst28 ;
++------------------------+--------+-------------------------+
+; Parameter Name         ; Value  ; Type                    ;
++------------------------+--------+-------------------------+
+; DEVICE_FAMILY          ; MAX II ; Untyped                 ;
+; AUTO_CARRY_CHAINS      ; ON     ; AUTO_CARRY              ;
+; IGNORE_CARRY_BUFFERS   ; OFF    ; IGNORE_CARRY            ;
+; AUTO_CASCADE_CHAINS    ; ON     ; AUTO_CASCADE            ;
+; IGNORE_CASCADE_BUFFERS ; OFF    ; IGNORE_CASCADE          ;
++------------------------+--------+-------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
-    Info: Processing started: Thu Nov  9 14:12:14 2023
+    Info: Processing started: Mon Nov 27 16:18:40 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ControlSystem -c ControlSystem
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -290,19 +288,15 @@ Info (12021): Found 1 design units, including 1 entities, in source file Control
     Info (12023): Found entity 1: ControlSystem
 Info (12127): Elaborating entity "ControlSystem" for the top level hierarchy
 Warning (275011): Block or symbol "AND2" of instance "inst31" overlaps another block or symbol
-Warning (275013): Port "CLK" of type 74164 and instance "inst" is missing source signal
-Info (12128): Elaborating entity "74163" for hierarchy "74163:inst28"
-Info (12130): Elaborated megafunction instantiation "74163:inst28"
-Info (12128): Elaborating entity "f74163" for hierarchy "74163:inst28|f74163:sub" File: /home/joel/intelFPGA_lite/22.1std/quartus/libraries/others/maxplus2/74163.tdf Line: 33
-Info (12131): Elaborated megafunction instantiation "74163:inst28|f74163:sub", which is child of megafunction instantiation "74163:inst28" File: /home/joel/intelFPGA_lite/22.1std/quartus/libraries/others/maxplus2/74163.tdf Line: 33
+Warning (275011): Block or symbol "74163" of instance "inst30" overlaps another block or symbol
 Info (12128): Elaborating entity "74163" for hierarchy "74163:inst30"
 Info (12130): Elaborated megafunction instantiation "74163:inst30"
+Info (12128): Elaborating entity "f74163" for hierarchy "74163:inst30|f74163:sub" File: /home/joel/intelFPGA_lite/22.1std/quartus/libraries/others/maxplus2/74163.tdf Line: 33
+Info (12131): Elaborated megafunction instantiation "74163:inst30|f74163:sub", which is child of megafunction instantiation "74163:inst30" File: /home/joel/intelFPGA_lite/22.1std/quartus/libraries/others/maxplus2/74163.tdf Line: 33
 Info (12128): Elaborating entity "74163" for hierarchy "74163:inst29"
 Info (12130): Elaborated megafunction instantiation "74163:inst29"
-Info (12128): Elaborating entity "74164" for hierarchy "74164:inst"
-Info (12130): Elaborated megafunction instantiation "74164:inst"
-Info (12128): Elaborating entity "7449" for hierarchy "7449:inst2"
-Info (12130): Elaborated megafunction instantiation "7449:inst2"
+Info (12128): Elaborating entity "74163" for hierarchy "74163:inst28"
+Info (12130): Elaborated megafunction instantiation "74163:inst28"
 Info (18008): Converted 3 single input CARRY primitives to CARRY_SUM primitives
 Warning (18009): Ignored 5 CARRY_SUM primitives
     Warning (18011): Ignored 5 CARRY_SUM primitive(s) -- cannot place fan-out logic in single logic cell
@@ -321,14 +315,14 @@ Warning (18009): Ignored 5 CARRY_SUM primitives
         Warning (18012): Can't place logic fed by CARRY_SUM primitive "74163:inst29|f74163:sub|74~0" into a single logic cell
             Warning (18042): Node "74163:inst29|f74163:sub|106" of type LUT
             Warning (18042): Node "74163:inst29|f74163:sub|109" of type LUT
-Info (21057): Implemented 37 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 39 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
-    Info (21059): Implemented 6 output pins
-    Info (21061): Implemented 28 logic cells
+    Info (21059): Implemented 7 output pins
+    Info (21061): Implemented 29 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 20 warnings
     Info: Peak virtual memory: 336 megabytes
-    Info: Processing ended: Thu Nov  9 14:12:21 2023
+    Info: Processing ended: Mon Nov 27 16:18:47 2023
     Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:18
+    Info: Total CPU time (on all processors): 00:00:20
 
 

@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "11/27/2023 11:05:30"
+// Generated on "11/27/2023 15:54:48"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          ShiftRegister
 // 
@@ -32,7 +32,6 @@ module ShiftRegister_vlg_vec_tst();
 // general purpose registers
 reg Clock;
 reg Reset;
-reg Select;
 reg Serial;
 // wires                                               
 wire pin_name1;
@@ -42,16 +41,7 @@ wire pin_name4;
 wire pin_name5;
 wire pin_name6;
 wire pin_name7;
-wire pin_name8;
 wire pin_name9;
-wire S;
-wire T;
-wire U;
-wire V;
-wire W;
-wire X;
-wire Y;
-wire Z;
 
 // assign statements (if any)                          
 ShiftRegister i1 (
@@ -64,19 +54,9 @@ ShiftRegister i1 (
 	.pin_name5(pin_name5),
 	.pin_name6(pin_name6),
 	.pin_name7(pin_name7),
-	.pin_name8(pin_name8),
 	.pin_name9(pin_name9),
 	.Reset(Reset),
-	.S(S),
-	.Select(Select),
-	.Serial(Serial),
-	.T(T),
-	.U(U),
-	.V(V),
-	.W(W),
-	.X(X),
-	.Y(Y),
-	.Z(Z)
+	.Serial(Serial)
 );
 initial 
 begin 
@@ -94,60 +74,22 @@ end
 // Reset
 initial
 begin
-	Reset = 1'b1;
-	# 1000;
-	repeat(2)
-	begin
-		Reset = 1'b0;
-		Reset = #396000 1'b1;
-		# 4000;
-	end
 	Reset = 1'b0;
 end 
 
 // Serial
 initial
 begin
-	Serial = 1'b0;
-	Serial = #20000 1'b1;
-	Serial = #20000 1'b0;
-	Serial = #40000 1'b1;
-	Serial = #40000 1'b0;
-	Serial = #40000 1'b1;
-	Serial = #20000 1'b0;
-	Serial = #40000 1'b1;
-	Serial = #20000 1'b0;
-	Serial = #20000 1'b1;
-	Serial = #40000 1'b0;
-	Serial = #40000 1'b1;
-	Serial = #60000 1'b0;
-	Serial = #20000 1'b1;
-	Serial = #40000 1'b0;
-	Serial = #40000 1'b1;
-	Serial = #40000 1'b0;
+	Serial = 1'b1;
+	Serial = #160000 1'b0;
 	Serial = #80000 1'b1;
-	Serial = #60000 1'b0;
-	Serial = #20000 1'b1;
-	Serial = #40000 1'b0;
-	Serial = #40000 1'b1;
 	Serial = #80000 1'b0;
-	Serial = #20000 1'b1;
-	Serial = #20000 1'b0;
-	Serial = #40000 1'b1;
-	Serial = #20000 1'b0;
-	Serial = #20000 1'b1;
-end 
-
-// Select
-initial
-begin
-	repeat(2)
-	begin
-		Select = 1'b0;
-		Select = #396000 1'b1;
-		# 4000;
-	end
-	Select = 1'b0;
+	Serial = #80000 1'b1;
+	Serial = #160000 1'b0;
+	Serial = #160000 1'b1;
+	Serial = #80000 1'b0;
+	Serial = #80000 1'b1;
+	Serial = #80000 1'b0;
 end 
 endmodule
 

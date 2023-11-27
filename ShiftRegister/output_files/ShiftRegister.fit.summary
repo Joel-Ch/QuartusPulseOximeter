@@ -1,11 +1,11 @@
-Fitter Status : Successful - Mon Nov 27 11:04:58 2023
+Fitter Status : Successful - Mon Nov 27 15:52:58 2023
 Quartus Prime Version : 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 Revision Name : ShiftRegister
 Top-level Entity Name : ShiftRegister
 Family : MAX II
 Device : EPM240T100C5
 Timing Models : Final
-Total logic elements : 16 / 240 ( 7 % )
-Total pins : 21 / 80 ( 26 % )
+Total logic elements : 8 / 240 ( 3 % )
+Total pins : 11 / 80 ( 14 % )
 Total virtual pins : 0
 UFM blocks : 0 / 1 ( 0 % )

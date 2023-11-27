@@ -10,23 +10,23 @@ z2
 cModel Technology
 Z0 d/home/joel/Documents/Quartus/ControlSystem/simulation/qsim
 vControlSystem
-Z1 !s110 1699539452
+Z1 !s110 1701102050
 !i10b 1
-!s100 QE1`_FknB41l]c1V7_@_P1
+!s100 WTnZ6k>OoRmoSzLFJY1ZU1
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I9Ffe4LBlOL@XM?i_LGN:B0
+Ia1fhN_f@KdCWlhh<YkLk=2
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1699539452
+w1701102050
 8ControlSystem.vo
 FControlSystem.vo
-!i122 124
-L0 32 1166
+!i122 128
+L0 32 1215
 Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1699539452.000000
+Z5 !s108 1701102050.000000
 !s107 ControlSystem.vo|
 !s90 -work|work|ControlSystem.vo|
 !i113 1
@@ -36,16 +36,16 @@ n@control@system
 vControlSystem_vlg_vec_tst
 R1
 !i10b 1
-!s100 BU;WYSnZ6Nn[cP;_=2>@O0
+!s100 XR23[f9USU;AYBzfDD6;=1
 R2
-InL=GT_CZ69Z^3W?W4@65<1
+IAA]n<ET<6oUk7QYEdW3R=3
 R3
 R0
-w1699539451
+w1701102049
 8Waveform.vwf.vt
 FWaveform.vwf.vt
-!i122 125
-L0 30 55
+!i122 129
+L0 30 56
 R4
 r1
 !s85 0

@@ -3,7 +3,7 @@ $comment
 		vcd file WholeThing.msim.vcd -direction
 $end
 $date
-	Mon Nov 27 15:21:09 2023
+	Mon Nov 27 16:29:27 2023
 $end
 $version
 	ModelSim Version 2020.1

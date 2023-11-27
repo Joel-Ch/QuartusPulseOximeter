@@ -10,23 +10,23 @@ z2
 cModel Technology
 Z0 d/home/joel/Documents/Quartus/ShiftRegister/simulation/qsim
 vShiftRegister
-Z1 !s110 1701083131
+Z1 !s110 1701100490
 !i10b 1
-!s100 jlzB7zV0oPZUR7fOQGLkk3
+!s100 b:kzH?k?gm]OAQ1BUTKRK1
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IYIZIm7R8L3>I3IE]RH8f53
+II8E1LF488B6cURzANIT0P1
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1701083131
+w1701100489
 8ShiftRegister.vo
 FShiftRegister.vo
-!i122 26
-L0 32 867
+!i122 28
+L0 32 450
 Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1701083131.000000
+Z5 !s108 1701100490.000000
 !s107 ShiftRegister.vo|
 !s90 -work|work|ShiftRegister.vo|
 !i113 1
@@ -36,16 +36,16 @@ n@shift@register
 vShiftRegister_vlg_vec_tst
 R1
 !i10b 1
-!s100 1DR4fXL]IAz7cU3USP=Y_3
+!s100 fEBH?JJg3W9JW44YFD6Zi0
 R2
-IbhPWZSG]]W3bZ9]=NPGk]2
+IWE:_5I5BD6J;0lizX:S8U2
 R3
 R0
-w1701083130
+w1701100488
 8Waveform.vwf.vt
 FWaveform.vwf.vt
-!i122 27
-L0 30 123
+!i122 29
+L0 30 65
 R4
 r1
 !s85 0

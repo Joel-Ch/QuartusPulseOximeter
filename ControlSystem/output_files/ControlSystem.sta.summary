@@ -3,19 +3,27 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Setup 'Clock'
-Slack : -4.513
-TNS   : -21.438
+Slack : -6.180
+TNS   : -53.371
 
 Type  : Setup '74163:inst29|f74163:sub|134'
-Slack : -3.244
-TNS   : -11.942
+Slack : -5.518
+TNS   : -21.272
 
 Type  : Hold 'Clock'
-Slack : -4.524
-TNS   : -12.086
+Slack : -5.620
+TNS   : -17.115
 
 Type  : Hold '74163:inst29|f74163:sub|134'
-Slack : 2.137
+Slack : 1.981
+TNS   : 0.000
+
+Type  : Recovery '74163:inst29|f74163:sub|134'
+Slack : -6.211
+TNS   : -6.211
+
+Type  : Removal '74163:inst29|f74163:sub|134'
+Slack : 2.855
 TNS   : 0.000
 
 Type  : Minimum Pulse Width 'Clock'

@@ -1,5 +1,5 @@
 Flow report for WholeThing
-Mon Nov 27 15:21:08 2023
+Mon Nov 27 16:29:26 2023
 Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------+
 ; Flow Summary                                                           ;
 +-----------------------+------------------------------------------------+
-; Flow Status           ; Successful - Mon Nov 27 15:21:08 2023          ;
+; Flow Status           ; Successful - Mon Nov 27 16:29:26 2023          ;
 ; Quartus Prime Version ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
 ; Revision Name         ; WholeThing                                     ;
 ; Top-level Entity Name ; WholeThing                                     ;
@@ -98,6 +98,10 @@ https://fpgasoftware.intel.com/eula.
 ; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 583 MB              ; 00:00:00                           ;
 ; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 571 MB              ; 00:00:00                           ;
 ; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 583 MB              ; 00:00:00                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 571 MB              ; 00:00:00                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 583 MB              ; 00:00:00                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 571 MB              ; 00:00:00                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 583 MB              ; 00:00:00                           ;
 ; Total                ; 00:00:09     ; --                      ; --                  ; 00:00:21                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
@@ -114,6 +118,10 @@ https://fpgasoftware.intel.com/eula.
 ; EDA Netlist Writer   ; joel-Inspiron-14-5410 ; Linux Mint ; 21         ; x86_64         ;
 ; EDA Netlist Writer   ; joel-Inspiron-14-5410 ; Linux Mint ; 21         ; x86_64         ;
 ; EDA Netlist Writer   ; joel-Inspiron-14-5410 ; Linux Mint ; 21         ; x86_64         ;
+; EDA Netlist Writer   ; joel-Inspiron-14-5410 ; Linux Mint ; 21         ; x86_64         ;
+; EDA Netlist Writer   ; joel-Inspiron-14-5410 ; Linux Mint ; 21         ; x86_64         ;
+; EDA Netlist Writer   ; joel-Inspiron-14-5410 ; Linux Mint ; 21         ; x86_64         ;
+; EDA Netlist Writer   ; joel-Inspiron-14-5410 ; Linux Mint ; 21         ; x86_64         ;
 +----------------------+-----------------------+------------+------------+----------------+
 
 
@@ -125,6 +133,10 @@ quartus_fit --read_settings_files=off --write_settings_files=off WholeThing -c W
 quartus_asm --read_settings_files=off --write_settings_files=off WholeThing -c WholeThing
 quartus_sta WholeThing -c WholeThing
 quartus_eda --read_settings_files=off --write_settings_files=off WholeThing -c WholeThing
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off WholeThing -c WholeThing --vector_source=/home/joel/Documents/Quartus/WholeThing/Waveform.vwf --testbench_file=/home/joel/Documents/Quartus/WholeThing/simulation/qsim/Waveform.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=/home/joel/Documents/Quartus/WholeThing/simulation/qsim/ WholeThing -c WholeThing
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off WholeThing -c WholeThing --vector_source=/home/joel/Documents/Quartus/WholeThing/Waveform.vwf --testbench_file=/home/joel/Documents/Quartus/WholeThing/simulation/qsim/Waveform.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=/home/joel/Documents/Quartus/WholeThing/simulation/qsim/ WholeThing -c WholeThing
 quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off WholeThing -c WholeThing --vector_source=/home/joel/Documents/Quartus/WholeThing/Waveform.vwf --testbench_file=/home/joel/Documents/Quartus/WholeThing/simulation/qsim/Waveform.vwf.vt
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=/home/joel/Documents/Quartus/WholeThing/simulation/qsim/ WholeThing -c WholeThing
 

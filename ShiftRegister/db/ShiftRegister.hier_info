@@ -1,13 +1,5 @@
 |ShiftRegister
-S <= inst900.DB_MAX_OUTPUT_PORT_TYPE
-Select => inst900.CLK
-Select => inst24.CLK
-Select => inst25.CLK
-Select => inst26.CLK
-Select => inst27.CLK
-Select => inst28.CLK
-Select => inst29.CLK
-Select => inst30.CLK
+pin_name2 <= inst17.DB_MAX_OUTPUT_PORT_TYPE
 Reset => inst92.IN0
 Clock => inst17.CLK
 Clock => inst8.CLK
@@ -18,21 +10,12 @@ Clock => inst21.CLK
 Clock => inst22.CLK
 Clock => inst23.CLK
 Serial => inst17.DATAIN
-T <= inst24.DB_MAX_OUTPUT_PORT_TYPE
-U <= inst25.DB_MAX_OUTPUT_PORT_TYPE
-V <= inst26.DB_MAX_OUTPUT_PORT_TYPE
-W <= inst27.DB_MAX_OUTPUT_PORT_TYPE
-X <= inst28.DB_MAX_OUTPUT_PORT_TYPE
-Y <= inst29.DB_MAX_OUTPUT_PORT_TYPE
-Z <= inst30.DB_MAX_OUTPUT_PORT_TYPE
-pin_name1 <= inst17.DB_MAX_OUTPUT_PORT_TYPE
-pin_name2 <= inst17.DB_MAX_OUTPUT_PORT_TYPE
 pin_name3 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
 pin_name4 <= inst18.DB_MAX_OUTPUT_PORT_TYPE
 pin_name5 <= inst19.DB_MAX_OUTPUT_PORT_TYPE
 pin_name6 <= inst20.DB_MAX_OUTPUT_PORT_TYPE
-pin_name7 <= <GND>
-pin_name8 <= inst22.DB_MAX_OUTPUT_PORT_TYPE
-pin_name9 <= <GND>
+pin_name7 <= inst21.DB_MAX_OUTPUT_PORT_TYPE
+pin_name9 <= inst22.DB_MAX_OUTPUT_PORT_TYPE
+pin_name1 <= inst23.DB_MAX_OUTPUT_PORT_TYPE
 
 

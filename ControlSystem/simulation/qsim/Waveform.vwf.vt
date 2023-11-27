@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "11/09/2023 14:17:31"
+// Generated on "11/27/2023 16:20:49"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          ControlSystem
 // 
@@ -34,23 +34,25 @@ reg Clock;
 reg Reset;
 reg Serial;
 // wires                                               
-wire HighAfter10;
-wire pin_name1;
-wire pin_name2;
-wire pin_name3;
-wire pin_name4;
+wire BigReset;
+wire ClockOut;
+wire Count8;
+wire LowFor4;
+wire LowFor4Latched;
+wire Select;
 wire SerialOut;
 
 // assign statements (if any)                          
 ControlSystem i1 (
 // port map - connection between master ports and signals/registers   
+	.BigReset(BigReset),
 	.Clock(Clock),
-	.HighAfter10(HighAfter10),
-	.pin_name1(pin_name1),
-	.pin_name2(pin_name2),
-	.pin_name3(pin_name3),
-	.pin_name4(pin_name4),
+	.ClockOut(ClockOut),
+	.Count8(Count8),
+	.LowFor4(LowFor4),
+	.LowFor4Latched(LowFor4Latched),
 	.Reset(Reset),
+	.Select(Select),
 	.Serial(Serial),
 	.SerialOut(SerialOut)
 );
@@ -63,23 +65,22 @@ end
 always
 begin
 	Clock = 1'b0;
-	Clock = #5000 1'b1;
-	#5000;
-end 
-
-// Serial
-initial
-begin
-	Serial = 1'b1;
-	Serial = #320000 1'b0;
-	Serial = #320000 1'b1;
-	Serial = #320000 1'b0;
+	Clock = #2000 1'b1;
+	#2000;
 end 
 
 // Reset
 initial
 begin
 	Reset = 1'b0;
+end 
+
+// Serial
+initial
+begin
+	Serial = 1'b1;
+	Serial = #160000 1'b0;
+	Serial = #640000 1'b1;
 end 
 endmodule
 

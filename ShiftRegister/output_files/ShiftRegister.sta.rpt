@@ -1,5 +1,5 @@
 Timing Analyzer report for ShiftRegister
-Mon Nov 27 11:05:00 2023
+Mon Nov 27 15:53:01 2023
 Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
@@ -17,20 +17,18 @@ Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
   9. Removal Summary
  10. Minimum Pulse Width Summary
  11. Setup: 'Clock'
- 12. Setup: 'Select'
- 13. Hold: 'Select'
- 14. Hold: 'Clock'
- 15. Setup Transfers
- 16. Hold Transfers
- 17. Report TCCS
- 18. Report RSKM
- 19. Unconstrained Paths Summary
- 20. Clock Status Summary
+ 12. Hold: 'Clock'
+ 13. Setup Transfers
+ 14. Hold Transfers
+ 15. Report TCCS
+ 16. Report RSKM
+ 17. Unconstrained Paths Summary
+ 18. Clock Status Summary
+ 19. Unconstrained Input Ports
+ 20. Unconstrained Output Ports
  21. Unconstrained Input Ports
  22. Unconstrained Output Ports
- 23. Unconstrained Input Ports
- 24. Unconstrained Output Ports
- 25. Timing Analyzer Messages
+ 23. Timing Analyzer Messages
 
 
 
@@ -77,21 +75,21 @@ https://fpgasoftware.intel.com/eula.
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Clocks                                                                                                                                                                             ;
-+------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------+
-; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets    ;
-+------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------+
-; Clock      ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { Clock }  ;
-; Select     ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { Select } ;
-+------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                            ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets   ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------+
+; Clock      ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { Clock } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------+
 
 
 +-----------------------------------------------------------------------------------------------------------+
@@ -99,29 +97,27 @@ https://fpgasoftware.intel.com/eula.
 +------------+-----------------+------------+---------------------------------------------------------------+
 ; Fmax       ; Restricted Fmax ; Clock Name ; Note                                                          ;
 +------------+-----------------+------------+---------------------------------------------------------------+
-; 389.71 MHz ; 304.04 MHz      ; Clock      ; limit due to minimum period restriction (max I/O toggle rate) ;
+; 455.58 MHz ; 304.04 MHz      ; Clock      ; limit due to minimum period restriction (max I/O toggle rate) ;
 +------------+-----------------+------------+---------------------------------------------------------------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
-+---------------------------------+
-; Setup Summary                   ;
-+--------+--------+---------------+
-; Clock  ; Slack  ; End Point TNS ;
-+--------+--------+---------------+
-; Clock  ; -1.566 ; -7.727        ;
-; Select ; -0.976 ; -7.683        ;
-+--------+--------+---------------+
-
-
 +--------------------------------+
-; Hold Summary                   ;
-+--------+-------+---------------+
-; Clock  ; Slack ; End Point TNS ;
-+--------+-------+---------------+
-; Select ; 1.395 ; 0.000         ;
-; Clock  ; 1.405 ; 0.000         ;
-+--------+-------+---------------+
+; Setup Summary                  ;
++-------+--------+---------------+
+; Clock ; Slack  ; End Point TNS ;
++-------+--------+---------------+
+; Clock ; -1.195 ; -7.142        ;
++-------+--------+---------------+
+
+
++-------------------------------+
+; Hold Summary                  ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; Clock ; 1.389 ; 0.000         ;
++-------+-------+---------------+
 
 
 --------------------
@@ -136,14 +132,13 @@ No paths to report.
 No paths to report.
 
 
-+---------------------------------+
-; Minimum Pulse Width Summary     ;
-+--------+--------+---------------+
-; Clock  ; Slack  ; End Point TNS ;
-+--------+--------+---------------+
-; Clock  ; -2.289 ; -2.289        ;
-; Select ; -2.289 ; -2.289        ;
-+--------+--------+---------------+
++--------------------------------+
+; Minimum Pulse Width Summary    ;
++-------+--------+---------------+
+; Clock ; Slack  ; End Point TNS ;
++-------+--------+---------------+
+; Clock ; -2.289 ; -2.289        ;
++-------+--------+---------------+
 
 
 +----------------------------------------------------------------------------------------------------+
@@ -151,46 +146,14 @@ No paths to report.
 +--------+-----------+---------+--------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node ; To Node ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+-----------+---------+--------------+-------------+--------------+------------+------------+
-; -1.566 ; inst19    ; inst20  ; Clock        ; Clock       ; 1.000        ; 0.000      ; 2.233      ;
-; -1.325 ; inst18    ; inst19  ; Clock        ; Clock       ; 1.000        ; 0.000      ; 1.992      ;
-; -0.978 ; inst20    ; inst21  ; Clock        ; Clock       ; 1.000        ; 0.000      ; 1.645      ;
-; -0.972 ; inst22    ; inst23  ; Clock        ; Clock       ; 1.000        ; 0.000      ; 1.639      ;
-; -0.968 ; inst17    ; inst8   ; Clock        ; Clock       ; 1.000        ; 0.000      ; 1.635      ;
-; -0.959 ; inst8     ; inst18  ; Clock        ; Clock       ; 1.000        ; 0.000      ; 1.626      ;
-; -0.959 ; inst21    ; inst22  ; Clock        ; Clock       ; 1.000        ; 0.000      ; 1.626      ;
+; -1.195 ; inst18    ; inst19  ; Clock        ; Clock       ; 1.000        ; 0.000      ; 1.862      ;
+; -1.195 ; inst19    ; inst20  ; Clock        ; Clock       ; 1.000        ; 0.000      ; 1.862      ;
+; -0.956 ; inst20    ; inst21  ; Clock        ; Clock       ; 1.000        ; 0.000      ; 1.623      ;
+; -0.956 ; inst22    ; inst23  ; Clock        ; Clock       ; 1.000        ; 0.000      ; 1.623      ;
+; -0.950 ; inst8     ; inst18  ; Clock        ; Clock       ; 1.000        ; 0.000      ; 1.617      ;
+; -0.947 ; inst21    ; inst22  ; Clock        ; Clock       ; 1.000        ; 0.000      ; 1.614      ;
+; -0.943 ; inst17    ; inst8   ; Clock        ; Clock       ; 1.000        ; 0.000      ; 1.610      ;
 +--------+-----------+---------+--------------+-------------+--------------+------------+------------+
-
-
-+----------------------------------------------------------------------------------------------------+
-; Setup: 'Select'                                                                                    ;
-+--------+-----------+---------+--------------+-------------+--------------+------------+------------+
-; Slack  ; From Node ; To Node ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
-+--------+-----------+---------+--------------+-------------+--------------+------------+------------+
-; -0.976 ; inst20    ; inst27  ; Clock        ; Select      ; 1.000        ; 0.000      ; 1.643      ;
-; -0.968 ; inst22    ; inst29  ; Clock        ; Select      ; 1.000        ; 0.000      ; 1.635      ;
-; -0.961 ; inst17    ; inst900 ; Clock        ; Select      ; 1.000        ; 0.000      ; 1.628      ;
-; -0.961 ; inst8     ; inst24  ; Clock        ; Select      ; 1.000        ; 0.000      ; 1.628      ;
-; -0.961 ; inst21    ; inst28  ; Clock        ; Select      ; 1.000        ; 0.000      ; 1.628      ;
-; -0.954 ; inst18    ; inst25  ; Clock        ; Select      ; 1.000        ; 0.000      ; 1.621      ;
-; -0.953 ; inst19    ; inst26  ; Clock        ; Select      ; 1.000        ; 0.000      ; 1.620      ;
-; -0.949 ; inst23    ; inst30  ; Clock        ; Select      ; 1.000        ; 0.000      ; 1.616      ;
-+--------+-----------+---------+--------------+-------------+--------------+------------+------------+
-
-
-+---------------------------------------------------------------------------------------------------+
-; Hold: 'Select'                                                                                    ;
-+-------+-----------+---------+--------------+-------------+--------------+------------+------------+
-; Slack ; From Node ; To Node ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
-+-------+-----------+---------+--------------+-------------+--------------+------------+------------+
-; 1.395 ; inst23    ; inst30  ; Clock        ; Select      ; 0.000        ; 0.000      ; 1.616      ;
-; 1.399 ; inst19    ; inst26  ; Clock        ; Select      ; 0.000        ; 0.000      ; 1.620      ;
-; 1.400 ; inst18    ; inst25  ; Clock        ; Select      ; 0.000        ; 0.000      ; 1.621      ;
-; 1.407 ; inst17    ; inst900 ; Clock        ; Select      ; 0.000        ; 0.000      ; 1.628      ;
-; 1.407 ; inst8     ; inst24  ; Clock        ; Select      ; 0.000        ; 0.000      ; 1.628      ;
-; 1.407 ; inst21    ; inst28  ; Clock        ; Select      ; 0.000        ; 0.000      ; 1.628      ;
-; 1.414 ; inst22    ; inst29  ; Clock        ; Select      ; 0.000        ; 0.000      ; 1.635      ;
-; 1.422 ; inst20    ; inst27  ; Clock        ; Select      ; 0.000        ; 0.000      ; 1.643      ;
-+-------+-----------+---------+--------------+-------------+--------------+------------+------------+
 
 
 +---------------------------------------------------------------------------------------------------+
@@ -198,13 +161,13 @@ No paths to report.
 +-------+-----------+---------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node ; To Node ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+-----------+---------+--------------+-------------+--------------+------------+------------+
-; 1.405 ; inst8     ; inst18  ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.626      ;
-; 1.405 ; inst21    ; inst22  ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.626      ;
-; 1.414 ; inst17    ; inst8   ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.635      ;
-; 1.418 ; inst22    ; inst23  ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.639      ;
-; 1.424 ; inst20    ; inst21  ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.645      ;
-; 1.771 ; inst18    ; inst19  ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.992      ;
-; 2.012 ; inst19    ; inst20  ; Clock        ; Clock       ; 0.000        ; 0.000      ; 2.233      ;
+; 1.389 ; inst17    ; inst8   ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.610      ;
+; 1.393 ; inst21    ; inst22  ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.614      ;
+; 1.396 ; inst8     ; inst18  ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.617      ;
+; 1.402 ; inst20    ; inst21  ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.623      ;
+; 1.402 ; inst22    ; inst23  ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.623      ;
+; 1.641 ; inst18    ; inst19  ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.862      ;
+; 1.641 ; inst19    ; inst20  ; Clock        ; Clock       ; 0.000        ; 0.000      ; 1.862      ;
 +-------+-----------+---------+--------------+-------------+--------------+------------+------------+
 
 
@@ -214,7 +177,6 @@ No paths to report.
 ; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +------------+----------+----------+----------+----------+----------+
 ; Clock      ; Clock    ; 7        ; 0        ; 0        ; 0        ;
-; Clock      ; Select   ; 8        ; 0        ; 0        ; 0        ;
 +------------+----------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -225,7 +187,6 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 ; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +------------+----------+----------+----------+----------+----------+
 ; Clock      ; Clock    ; 7        ; 0        ; 0        ; 0        ;
-; Clock      ; Select   ; 8        ; 0        ; 0        ; 0        ;
 +------------+----------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -251,19 +212,18 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 2     ; 2    ;
 ; Unconstrained Input Port Paths  ; 9     ; 9    ;
-; Unconstrained Output Ports      ; 15    ; 15   ;
-; Unconstrained Output Port Paths ; 15    ; 15   ;
+; Unconstrained Output Ports      ; 8     ; 8    ;
+; Unconstrained Output Port Paths ; 8     ; 8    ;
 +---------------------------------+-------+------+
 
 
-+--------------------------------------+
-; Clock Status Summary                 ;
-+--------+--------+------+-------------+
-; Target ; Clock  ; Type ; Status      ;
-+--------+--------+------+-------------+
-; Clock  ; Clock  ; Base ; Constrained ;
-; Select ; Select ; Base ; Constrained ;
-+--------+--------+------+-------------+
++-------------------------------------+
+; Clock Status Summary                ;
++--------+-------+------+-------------+
+; Target ; Clock ; Type ; Status      ;
++--------+-------+------+-------------+
+; Clock  ; Clock ; Base ; Constrained ;
++--------+-------+------+-------------+
 
 
 +---------------------------------------------------------------------------------------------------+
@@ -281,21 +241,14 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +-------------+---------------------------------------------------------------------------------------+
 ; Output Port ; Comment                                                                               ;
 +-------------+---------------------------------------------------------------------------------------+
-; S           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; T           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; U           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; V           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; W           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; X           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; Y           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; Z           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; pin_name1   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; pin_name2   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; pin_name3   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; pin_name4   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; pin_name5   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; pin_name6   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; pin_name8   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; pin_name7   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; pin_name9   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +-------------+---------------------------------------------------------------------------------------+
 
 
@@ -314,21 +267,14 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +-------------+---------------------------------------------------------------------------------------+
 ; Output Port ; Comment                                                                               ;
 +-------------+---------------------------------------------------------------------------------------+
-; S           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; T           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; U           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; V           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; W           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; X           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; Y           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; Z           ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; pin_name1   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; pin_name2   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; pin_name3   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; pin_name4   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; pin_name5   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; pin_name6   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; pin_name8   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; pin_name7   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; pin_name9   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +-------------+---------------------------------------------------------------------------------------+
 
 
@@ -338,7 +284,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
-    Info: Processing started: Mon Nov 27 11:05:00 2023
+    Info: Processing started: Mon Nov 27 15:53:00 2023
 Info: Command: quartus_sta ShiftRegister -c ShiftRegister
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -350,35 +296,31 @@ Info (334004): Delay annotation completed successfully
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'ShiftRegister.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
 Info (332105): Deriving Clocks
-    Info (332105): create_clock -period 1.000 -name Select Select
     Info (332105): create_clock -period 1.000 -name Clock Clock
 Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -1.566
+Info (332146): Worst-case setup slack is -1.195
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -1.566              -7.727 Clock 
-    Info (332119):    -0.976              -7.683 Select 
-Info (332146): Worst-case hold slack is 1.395
+    Info (332119):    -1.195              -7.142 Clock 
+Info (332146): Worst-case hold slack is 1.389
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     1.395               0.000 Select 
-    Info (332119):     1.405               0.000 Clock 
+    Info (332119):     1.389               0.000 Clock 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -2.289
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):    -2.289              -2.289 Clock 
-    Info (332119):    -2.289              -2.289 Select 
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 3 warnings
     Info: Peak virtual memory: 343 megabytes
-    Info: Processing ended: Mon Nov 27 11:05:00 2023
-    Info: Elapsed time: 00:00:00
+    Info: Processing ended: Mon Nov 27 15:53:01 2023
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:00
 
 

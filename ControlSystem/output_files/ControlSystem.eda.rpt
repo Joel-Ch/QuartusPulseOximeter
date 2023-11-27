@@ -1,5 +1,5 @@
 EDA Netlist Writer report for ControlSystem
-Thu Nov  9 14:17:32 2023
+Mon Nov 27 16:20:50 2023
 Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Thu Nov  9 14:17:32 2023 ;
+; EDA Netlist Writer Status ; Successful - Mon Nov 27 16:20:50 2023 ;
 ; Revision Name             ; ControlSystem                         ;
 ; Top-level Entity Name     ; ControlSystem                         ;
 ; Family                    ; MAX II                                ;
@@ -95,13 +95,13 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Thu Nov  9 14:17:31 2023
+    Info: Processing started: Mon Nov 27 16:20:49 2023
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=/home/joel/Documents/Quartus/ControlSystem/simulation/qsim/ ControlSystem -c ControlSystem
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file ControlSystem.vo in folder "/home/joel/Documents/Quartus/ControlSystem/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 583 megabytes
-    Info: Processing ended: Thu Nov  9 14:17:32 2023
+    Info: Processing ended: Mon Nov 27 16:20:50 2023
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:00
 
