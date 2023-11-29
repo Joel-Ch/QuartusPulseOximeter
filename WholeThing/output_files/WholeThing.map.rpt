@@ -1,5 +1,5 @@
 Analysis & Synthesis report for WholeThing
-Mon Nov 27 11:49:23 2023
+Tue Nov 28 23:28:44 2023
 Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
@@ -45,12 +45,12 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +-----------------------------+------------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Mon Nov 27 11:49:23 2023          ;
+; Analysis & Synthesis Status ; Successful - Tue Nov 28 23:28:44 2023          ;
 ; Quartus Prime Version       ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
 ; Revision Name               ; WholeThing                                     ;
 ; Top-level Entity Name       ; WholeThing                                     ;
 ; Family                      ; MAX II                                         ;
-; Total logic elements        ; 61                                             ;
+; Total logic elements        ; 59                                             ;
 ; Total pins                  ; 34                                             ;
 ; Total virtual pins          ; 0                                              ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                                  ;
@@ -161,32 +161,32 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+--------+
 ; Resource                                    ; Usage  ;
 +---------------------------------------------+--------+
-; Total logic elements                        ; 61     ;
-;     -- Combinational with no register       ; 31     ;
+; Total logic elements                        ; 59     ;
+;     -- Combinational with no register       ; 30     ;
 ;     -- Register only                        ; 16     ;
-;     -- Combinational with a register        ; 14     ;
+;     -- Combinational with a register        ; 13     ;
 ;                                             ;        ;
 ; Logic element usage by number of LUT inputs ;        ;
-;     -- 4 input functions                    ; 15     ;
+;     -- 4 input functions                    ; 16     ;
 ;     -- 3 input functions                    ; 7      ;
-;     -- 2 input functions                    ; 21     ;
+;     -- 2 input functions                    ; 18     ;
 ;     -- 1 input functions                    ; 2      ;
 ;     -- 0 input functions                    ; 0      ;
 ;                                             ;        ;
 ; Logic elements by mode                      ;        ;
-;     -- normal mode                          ; 61     ;
+;     -- normal mode                          ; 59     ;
 ;     -- arithmetic mode                      ; 0      ;
 ;     -- qfbk mode                            ; 0      ;
 ;     -- register cascade mode                ; 0      ;
 ;     -- synchronous clear/load mode          ; 0      ;
 ;     -- asynchronous clear/load mode         ; 8      ;
 ;                                             ;        ;
-; Total registers                             ; 30     ;
+; Total registers                             ; 29     ;
 ; I/O pins                                    ; 34     ;
 ; Maximum fan-out node                        ; inst36 ;
-; Maximum fan-out                             ; 17     ;
-; Total fan-out                               ; 209    ;
-; Average fan-out                             ; 2.20   ;
+; Maximum fan-out                             ; 16     ;
+; Total fan-out                               ; 206    ;
+; Average fan-out                             ; 2.22   ;
 +---------------------------------------------+--------+
 
 
@@ -195,25 +195,25 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                 ; Entity Name ; Library Name ;
 +----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------+-------------+--------------+
-; |WholeThing                ; 61 (39)     ; 30           ; 0          ; 34   ; 0            ; 31 (20)      ; 16 (16)           ; 14 (3)           ; 0 (0)           ; 0 (0)      ; |WholeThing                         ; WholeThing  ; work         ;
+; |WholeThing                ; 59 (40)     ; 29           ; 0          ; 34   ; 0            ; 30 (21)      ; 16 (16)           ; 13 (3)           ; 0 (0)           ; 0 (0)      ; |WholeThing                         ; WholeThing  ; work         ;
 ;    |74163:inst28|          ; 5 (0)       ; 3            ; 0          ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 3 (0)            ; 0 (0)           ; 0 (0)      ; |WholeThing|74163:inst28            ; 74163       ; work         ;
 ;       |f74163:sub|         ; 5 (5)       ; 3            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 3 (3)            ; 0 (0)           ; 0 (0)      ; |WholeThing|74163:inst28|f74163:sub ; f74163      ; work         ;
-;    |74163:inst29|          ; 9 (0)       ; 4            ; 0          ; 0    ; 0            ; 5 (0)        ; 0 (0)             ; 4 (0)            ; 0 (0)           ; 0 (0)      ; |WholeThing|74163:inst29            ; 74163       ; work         ;
-;       |f74163:sub|         ; 9 (9)       ; 4            ; 0          ; 0    ; 0            ; 5 (5)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |WholeThing|74163:inst29|f74163:sub ; f74163      ; work         ;
+;    |74163:inst29|          ; 6 (0)       ; 3            ; 0          ; 0    ; 0            ; 3 (0)        ; 0 (0)             ; 3 (0)            ; 0 (0)           ; 0 (0)      ; |WholeThing|74163:inst29            ; 74163       ; work         ;
+;       |f74163:sub|         ; 6 (6)       ; 3            ; 0          ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 3 (3)            ; 0 (0)           ; 0 (0)      ; |WholeThing|74163:inst29|f74163:sub ; f74163      ; work         ;
 ;    |74163:inst30|          ; 8 (0)       ; 4            ; 0          ; 0    ; 0            ; 4 (0)        ; 0 (0)             ; 4 (0)            ; 0 (0)           ; 0 (0)      ; |WholeThing|74163:inst30            ; 74163       ; work         ;
 ;       |f74163:sub|         ; 8 (8)       ; 4            ; 0          ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |WholeThing|74163:inst30|f74163:sub ; f74163      ; work         ;
 +----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-------------------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+-----------------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                                       ;
-+----------------------------------------------------+-----------------------------+------------------------+
-; Latch Name                                         ; Latch Enable Signal         ; Free of Timing Hazards ;
-+----------------------------------------------------+-----------------------------+------------------------+
-; inst96                                             ; 74163:inst29|f74163:sub|134 ; yes                    ;
-; Number of user-specified and inferred latches = 1  ;                             ;                        ;
-+----------------------------------------------------+-----------------------------+------------------------+
++---------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                               ;
++----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
++----------------------------------------------------+---------------------+------------------------+
+; inst96                                             ; inst12              ; yes                    ;
+; Number of user-specified and inferred latches = 1  ;                     ;                        ;
++----------------------------------------------------+---------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
@@ -222,7 +222,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 30    ;
+; Total registers                              ; 29    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 8     ;
@@ -280,7 +280,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
-    Info: Processing started: Mon Nov 27 11:49:16 2023
+    Info: Processing started: Tue Nov 28 23:28:38 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off WholeThing -c WholeThing
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -301,31 +301,28 @@ Info (12130): Elaborated megafunction instantiation "74163:inst29"
 Info (12128): Elaborating entity "74163" for hierarchy "74163:inst28"
 Info (12130): Elaborated megafunction instantiation "74163:inst28"
 Info (18008): Converted 3 single input CARRY primitives to CARRY_SUM primitives
-Warning (18009): Ignored 5 CARRY_SUM primitives
-    Warning (18011): Ignored 5 CARRY_SUM primitive(s) -- cannot place fan-out logic in single logic cell
+Warning (18009): Ignored 4 CARRY_SUM primitives
+    Warning (18011): Ignored 4 CARRY_SUM primitive(s) -- cannot place fan-out logic in single logic cell
         Warning (18012): Can't place logic fed by CARRY_SUM primitive "74163:inst30|f74163:sub|107~0" into a single logic cell
             Warning (18042): Node "74163:inst30|f74163:sub|117" of type LUT
             Warning (18042): Node "74163:inst30|f74163:sub|120" of type LUT
         Warning (18012): Can't place logic fed by CARRY_SUM primitive "74163:inst30|f74163:sub|74~0" into a single logic cell
-            Warning (18042): Node "74163:inst30|f74163:sub|109" of type LUT
             Warning (18042): Node "74163:inst30|f74163:sub|106" of type LUT
+            Warning (18042): Node "74163:inst30|f74163:sub|109" of type LUT
+        Warning (18012): Can't place logic fed by CARRY_SUM primitive "74163:inst29|f74163:sub|74~0" into a single logic cell
+            Warning (18042): Node "74163:inst29|f74163:sub|109" of type LUT
+            Warning (18042): Node "74163:inst29|f74163:sub|106" of type LUT
         Warning (18012): Can't place logic fed by CARRY_SUM primitive "74163:inst28|f74163:sub|74~0" into a single logic cell
             Warning (18042): Node "74163:inst28|f74163:sub|106" of type LUT
             Warning (18042): Node "74163:inst28|f74163:sub|109" of type LUT
-        Warning (18012): Can't place logic fed by CARRY_SUM primitive "74163:inst29|f74163:sub|107~0" into a single logic cell
-            Warning (18042): Node "74163:inst29|f74163:sub|117" of type LUT
-            Warning (18042): Node "74163:inst29|f74163:sub|120" of type LUT
-        Warning (18012): Can't place logic fed by CARRY_SUM primitive "74163:inst29|f74163:sub|74~0" into a single logic cell
-            Warning (18042): Node "74163:inst29|f74163:sub|106" of type LUT
-            Warning (18042): Node "74163:inst29|f74163:sub|109" of type LUT
-Info (21057): Implemented 95 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 93 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 30 output pins
-    Info (21061): Implemented 61 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 23 warnings
-    Info: Peak virtual memory: 336 megabytes
-    Info: Processing ended: Mon Nov 27 11:49:23 2023
-    Info: Elapsed time: 00:00:07
+    Info (21061): Implemented 59 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 20 warnings
+    Info: Peak virtual memory: 338 megabytes
+    Info: Processing ended: Tue Nov 28 23:28:44 2023
+    Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:19
 
 

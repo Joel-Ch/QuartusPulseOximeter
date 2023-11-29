@@ -57,3 +57,19 @@ set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
 set_global_assignment -name BDF_FILE WholeThing.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
+set_location_assignment PIN_67 -to A_out
+set_location_assignment PIN_73 -to A_out2
+set_location_assignment PIN_61 -to B_out
+set_location_assignment PIN_75 -to B_out2
+set_location_assignment PIN_91 -to C_out
+set_location_assignment PIN_99 -to C_out2
+set_location_assignment PIN_89 -to D_out
+set_location_assignment PIN_97 -to D_out2
+set_location_assignment PIN_87 -to E_out
+set_location_assignment PIN_95 -to E_out2
+set_location_assignment PIN_57 -to F_out
+set_location_assignment PIN_71 -to F_out2
+set_location_assignment PIN_55 -to G_out
+set_location_assignment PIN_69 -to G_out2
+set_location_assignment PIN_51 -to HighFreqClock
+set_location_assignment PIN_53 -to Serial
