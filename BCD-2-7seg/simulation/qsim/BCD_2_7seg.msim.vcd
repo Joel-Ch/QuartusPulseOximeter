@@ -3,7 +3,7 @@ $comment
 		vcd file BCD_2_7seg.msim.vcd -direction
 $end
 $date
-	Thu Nov  9 09:34:57 2023
+	Thu Nov 30 15:59:13 2023
 $end
 $version
 	ModelSim Version 2020.1

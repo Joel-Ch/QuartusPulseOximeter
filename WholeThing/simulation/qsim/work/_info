@@ -10,23 +10,23 @@ z2
 cModel Technology
 Z0 d/home/joel/Documents/Quartus/WholeThing/simulation/qsim
 vWholeThing
-Z1 !s110 1701214140
+Z1 !s110 1701359716
 !i10b 1
-!s100 0hf6^GXI;CN92=GoO2OG]2
+!s100 MDSiQ5EFRE2`G5ZPG@jLP1
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IzPAcnm`l7RYLGM[o4[hJH2
+I7ZCo2f`@WcRW]FHI^cKj51
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1701214140
+w1701359715
 8WholeThing.vo
 FWholeThing.vo
-!i122 160
-L0 32 2299
+!i122 168
+L0 32 2262
 Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1701214140.000000
+Z5 !s108 1701359716.000000
 !s107 WholeThing.vo|
 !s90 -work|work|WholeThing.vo|
 !i113 1
@@ -41,10 +41,10 @@ R2
 IT5L^Zc_c]NI=^@P@Xf=<o0
 R3
 R0
-w1701214139
+w1701359714
 8Waveform.vwf.vt
 FWaveform.vwf.vt
-!i122 161
+!i122 169
 L0 30 121
 R4
 r1

@@ -3,7 +3,7 @@ $comment
 		vcd file WholeThing.msim.vcd -direction
 $end
 $date
-	Tue Nov 28 23:29:01 2023
+	Thu Nov 30 15:55:16 2023
 $end
 $version
 	ModelSim Version 2020.1
@@ -61,16 +61,16 @@ $var wire 1 K inst87~regout $end
 $var wire 1 L Reset~combout $end
 $var wire 1 M Serial~combout $end
 $var wire 1 N inst37~combout $end
-$var wire 1 O inst30|sub|34~regout $end
-$var wire 1 P inst30|sub|109~combout $end
-$var wire 1 Q inst30|sub|111~regout $end
-$var wire 1 R inst30|sub|106~combout $end
-$var wire 1 S inst30|sub|120~combout $end
-$var wire 1 T inst30|sub|122~regout $end
-$var wire 1 U inst30|sub|117~combout $end
-$var wire 1 V inst30|sub|134~regout $end
-$var wire 1 W inst36~combout $end
-$var wire 1 X inst90~combout $end
+$var wire 1 O inst90~combout $end
+$var wire 1 P inst30|sub|34~regout $end
+$var wire 1 Q inst30|sub|109~combout $end
+$var wire 1 R inst30|sub|111~regout $end
+$var wire 1 S inst30|sub|106~combout $end
+$var wire 1 T inst30|sub|120~combout $end
+$var wire 1 U inst30|sub|122~regout $end
+$var wire 1 V inst30|sub|117~combout $end
+$var wire 1 W inst30|sub|134~regout $end
+$var wire 1 X inst36~combout $end
 $var wire 1 Y inst109~combout $end
 $var wire 1 Z inst28|sub|34~regout $end
 $var wire 1 [ inst28|sub|109~combout $end
@@ -90,34 +90,33 @@ $var wire 1 h ShiftRegisterReset~combout $end
 $var wire 1 i inst96 $end
 $var wire 1 j inst~regout $end
 $var wire 1 k inst1~regout $end
-$var wire 1 l inst2~regout $end
-$var wire 1 m inst3~regout $end
-$var wire 1 n inst15~regout $end
-$var wire 1 o inst10~regout $end
-$var wire 1 p inst11~regout $end
+$var wire 1 l inst10~regout $end
+$var wire 1 m inst2~regout $end
+$var wire 1 n inst11~regout $end
+$var wire 1 o inst3~regout $end
+$var wire 1 p inst15~regout $end
 $var wire 1 q inst9~regout $end
 $var wire 1 r inst4~regout $end
 $var wire 1 s inst5~regout $end
 $var wire 1 t inst6~regout $end
 $var wire 1 u inst7~regout $end
-$var wire 1 v inst19~regout $end
-$var wire 1 w inst17~regout $end
+$var wire 1 v inst17~regout $end
+$var wire 1 w inst19~regout $end
 $var wire 1 x inst18~regout $end
 $var wire 1 y inst16~regout $end
 $var wire 1 z inst25~0 $end
 $var wire 1 { inst21 $end
 $var wire 1 | inst26 $end
-$var wire 1 } inst38~0 $end
-$var wire 1 ~ inst42~0_combout $end
-$var wire 1 !! inst46~0_combout $end
-$var wire 1 "! inst52~0_combout $end
-$var wire 1 #! inst58~0 $end
-$var wire 1 $! inst61 $end
-$var wire 1 %! inst64 $end
-$var wire 1 &! inst66~0 $end
-$var wire 1 '! inst70~0_combout $end
-$var wire 1 (! inst74~0_combout $end
-$var wire 1 )! inst80~0_combout $end
+$var wire 1 } inst42~0 $end
+$var wire 1 ~ inst46~0_combout $end
+$var wire 1 !! inst52~0_combout $end
+$var wire 1 "! inst58~0 $end
+$var wire 1 #! inst61 $end
+$var wire 1 $! inst64 $end
+$var wire 1 %! inst66~0 $end
+$var wire 1 &! inst70~0_combout $end
+$var wire 1 '! inst74~0_combout $end
+$var wire 1 (! inst80~0_combout $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
@@ -127,24 +126,24 @@ $dumpvars
 0"
 1#
 0$
-1%
-1&
-1'
-1(
+0%
+0&
+0'
+0(
 0)
-1*
-1+
+0*
+0+
 0,
 0-
 0.
-1/
-10
-11
-12
-13
-14
-05
-06
+0/
+00
+01
+02
+03
+04
+15
+16
 07
 08
 09
@@ -217,15 +216,14 @@ xi
 1|
 1}
 1~
-1!!
-0"!
+0!!
+1"!
 1#!
 1$!
 1%!
 1&!
 1'!
-1(!
-0)!
+0(!
 $end
 #500
 1!
@@ -883,9 +881,9 @@ $end
 1N
 1.
 0;
-1O
-xj
 1P
+xj
+1Q
 #73000
 0!
 0I
@@ -1212,8 +1210,8 @@ xj
 0a
 1N
 1.
-1Q
-0O
+1R
+0P
 xk
 0j
 #105000
@@ -1542,12 +1540,12 @@ xk
 0a
 1N
 1.
-1O
-xl
+1P
+xm
 0k
-1R
-0P
 1S
+0Q
+1T
 #137000
 0!
 0I
@@ -1874,16 +1872,16 @@ xl
 0a
 1N
 1.
-1T
-0Q
-0O
-xm
-0l
 1U
-0S
 0R
-0U
-1S
+0P
+xo
+0m
+1V
+0T
+0S
+0V
+1T
 #169000
 0!
 0I
@@ -2210,10 +2208,10 @@ xm
 0a
 1N
 1.
-1O
-xr
-0m
 1P
+xr
+0o
+1Q
 #201000
 0!
 0I
@@ -2539,8 +2537,8 @@ xr
 1N
 1.
 1;
-1Q
-0O
+1R
+0P
 xs
 0r
 #233000
@@ -2845,14 +2843,14 @@ xs
 0a
 1N
 1.
-1O
+1P
 xt
 0s
 1j
-1R
-0P
-1U
-0S
+1S
+0Q
+1V
+0T
 #265000
 0!
 0I
@@ -3168,17 +3166,17 @@ xt
 1N
 1.
 0;
-1V
-0T
-0Q
-0O
+1W
+0U
+0R
+0P
 xu
 0t
 1k
-0U
-1S
-0R
+0V
+1T
 0S
+0T
 #297000
 0!
 0I
@@ -3504,25 +3502,25 @@ xu
 1N
 1.
 1;
-1O
-0u
-1l
-0j
-1W
 1P
-0i
+0u
+1m
+0j
 1X
+1Q
+0i
+1O
 17
 0;
 1)
-1p
-1o
-1)!
-0$!
+1n
+1l
+1(!
+0#!
 1=
 1<
-16
-0(
+1(
+06
 #329000
 0!
 0I
@@ -3600,10 +3598,10 @@ xu
 1K
 1N
 1-
-0V
 0W
-1a
 0X
+1a
+0O
 0N
 07
 0)
@@ -4126,9 +4124,9 @@ xu
 1N
 1.
 1;
-1Q
-0O
-1m
+1R
+0P
+1o
 0k
 #393000
 0!
@@ -4432,13 +4430,13 @@ xu
 0a
 1N
 1.
-1O
+1P
 1r
-0l
+0m
 1j
-1R
-0P
 1S
+0Q
+1T
 #425000
 0!
 0I
@@ -4754,17 +4752,17 @@ xu
 1N
 1.
 0;
-1T
-0Q
-0O
-1s
-0m
-1k
 1U
-0S
 0R
-0U
-1S
+0P
+1s
+0o
+1k
+1V
+0T
+0S
+0V
+1T
 #457000
 0!
 0I
@@ -5091,12 +5089,12 @@ xu
 0a
 1N
 1.
-1O
+1P
 1t
 0r
-1l
+1m
 0j
-1P
+1Q
 #489000
 0!
 0I
@@ -5423,11 +5421,11 @@ xu
 0a
 1N
 1.
-1Q
-0O
+1R
+0P
 1u
 0s
-1m
+1o
 0k
 #521000
 0!
@@ -5754,14 +5752,14 @@ xu
 1N
 1.
 1;
-1O
+1P
 0t
 1r
-0l
-1R
-0P
-1U
-0S
+0m
+1S
+0Q
+1V
+0T
 #553000
 0!
 0I
@@ -6064,18 +6062,18 @@ xu
 0a
 1N
 1.
-1V
-0T
-0Q
-0O
+1W
+0U
+0R
+0P
 0u
 1s
-0m
+0o
 1j
-0U
-1S
-0R
+0V
+1T
 0S
+0T
 #585000
 0!
 0I
@@ -6391,33 +6389,33 @@ xu
 1N
 1.
 0;
-1O
+1P
 1t
 0r
 1k
-1W
-1P
-1Y
 1X
+1Q
+1Y
+1O
 17
 1)
 0,
 1x
-1w
+1v
 1q
-0p
-1"!
+0n
+1!!
 0{
-0'!
-1$!
+0&!
+1#!
 1A
 1@
 1:
 0=
-15
-0'
-02
-1(
+0(
+12
+1'
+05
 #617000
 0!
 0I
@@ -6498,11 +6496,11 @@ xu
 1K
 1N
 1-
-0V
 0W
+0X
 1a
 0Y
-0X
+0O
 0N
 07
 0)
@@ -6927,11 +6925,11 @@ xu
 0a
 1N
 1.
-1Q
-0O
+1R
+0P
 1u
 0s
-1l
+1m
 0j
 #669000
 0!
@@ -7259,13 +7257,13 @@ xu
 0a
 1N
 1.
-1O
+1P
 0t
-1m
+1o
 0k
-1R
-0P
 1S
+0Q
+1T
 #701000
 0!
 0I
@@ -7592,17 +7590,17 @@ xu
 0a
 1N
 1.
-1T
-0Q
-0O
+1U
+0R
+0P
 0u
 1r
-0l
-1U
+0m
+1V
+0T
 0S
-0R
-0U
-1S
+0V
+1T
 #733000
 0!
 0I
@@ -7914,11 +7912,11 @@ xu
 0a
 1N
 1.
-1O
-1s
-0m
-1j
 1P
+1s
+0o
+1j
+1Q
 #765000
 0!
 0I
@@ -8221,8 +8219,8 @@ xu
 0a
 1N
 1.
-1Q
-0O
+1R
+0P
 1t
 0r
 1k
@@ -8528,14 +8526,14 @@ xu
 0a
 1N
 1.
-1O
+1P
 1u
 0s
-1l
-1R
-0P
-1U
-0S
+1m
+1S
+0Q
+1V
+0T
 #829000
 0!
 0I
@@ -8838,16 +8836,16 @@ xu
 0a
 1N
 1.
-1V
-0T
-0Q
-0O
-0t
-1m
+1W
 0U
-1S
 0R
+0P
+0t
+1o
+0V
+1T
 0S
+0T
 #861000
 0!
 0I
@@ -9180,37 +9178,37 @@ xu
 0a
 1N
 1.
-1O
+1P
 0u
 1r
 0j
-1W
-1P
-1Y
 1X
+1Q
+1Y
+1O
 17
 1)
 0,
 1y
 0x
-0w
+0v
 0q
 1p
 1n
 1{
-0)!
 0(!
-0&!
+0'!
+0%!
 1?
 0A
 0@
 0:
-1=
 1>
-1'
-06
-04
-00
+1=
+10
+14
+16
+0'
 #893000
 0!
 0I
@@ -9288,11 +9286,11 @@ xu
 1K
 1N
 1-
-0V
 0W
+0X
 1a
 0Y
-0X
+0O
 0N
 07
 0)
@@ -9712,8 +9710,8 @@ xu
 1N
 1.
 1;
-1Q
-0O
+1R
+0P
 1s
 0k
 #945000
@@ -10018,13 +10016,13 @@ xu
 0a
 1N
 1.
-1O
+1P
 1t
-0l
+0m
 1j
-1R
-0P
 1S
+0Q
+1T
 #977000
 0!
 0I

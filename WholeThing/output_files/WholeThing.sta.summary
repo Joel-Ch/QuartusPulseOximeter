@@ -3,52 +3,52 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Setup 'inst87'
-Slack : -8.556
-TNS   : -74.338
+Slack : -8.871
+TNS   : -82.972
 
 Type  : Setup '74163:inst29|f74163:sub|111'
-Slack : -5.293
-TNS   : -31.192
+Slack : -4.714
+TNS   : -29.188
 
 Type  : Setup '74163:inst30|f74163:sub|134'
-Slack : -3.444
-TNS   : -14.149
+Slack : -3.756
+TNS   : -10.249
 
 Type  : Setup 'inst86'
-Slack : 0.466
+Slack : 0.819
 TNS   : 0.000
 
 Type  : Setup 'HighFreqClock'
-Slack : 3.125
+Slack : 3.403
 TNS   : 0.000
 
 Type  : Hold '74163:inst30|f74163:sub|134'
-Slack : -4.415
-TNS   : -11.851
+Slack : -5.110
+TNS   : -15.320
 
 Type  : Hold '74163:inst29|f74163:sub|111'
-Slack : -3.766
-TNS   : -10.070
-
-Type  : Hold 'inst87'
-Slack : -3.467
-TNS   : -11.662
+Slack : -4.805
+TNS   : -17.251
 
 Type  : Hold 'HighFreqClock'
-Slack : -3.179
-TNS   : -3.179
+Slack : -3.457
+TNS   : -3.457
+
+Type  : Hold 'inst87'
+Slack : -2.498
+TNS   : -13.965
 
 Type  : Hold 'inst86'
-Slack : -0.520
-TNS   : -0.520
+Slack : -0.873
+TNS   : -0.873
 
 Type  : Recovery '74163:inst29|f74163:sub|111'
-Slack : -6.107
-TNS   : -6.107
+Slack : -6.848
+TNS   : -6.848
 
 Type  : Removal '74163:inst29|f74163:sub|111'
-Slack : -2.700
-TNS   : -2.700
+Slack : -3.513
+TNS   : -3.513
 
 Type  : Minimum Pulse Width 'HighFreqClock'
 Slack : -2.289

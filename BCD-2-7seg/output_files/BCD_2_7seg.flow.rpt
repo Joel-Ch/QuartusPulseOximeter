@@ -1,5 +1,5 @@
 Flow report for BCD_2_7seg
-Thu Nov  9 09:34:56 2023
+Thu Nov 30 15:59:12 2023
 Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------+
 ; Flow Summary                                                           ;
 +-----------------------+------------------------------------------------+
-; Flow Status           ; Successful - Thu Nov  9 09:34:56 2023          ;
+; Flow Status           ; Successful - Thu Nov 30 15:59:12 2023          ;
 ; Quartus Prime Version ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
 ; Revision Name         ; BCD_2_7seg                                     ;
 ; Top-level Entity Name ; BCD_2_7seg                                     ;
@@ -98,6 +98,8 @@ https://fpgasoftware.intel.com/eula.
 ; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 583 MB              ; 00:00:00                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 571 MB              ; 00:00:00                           ;
 ; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 583 MB              ; 00:00:00                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 571 MB              ; 00:00:00                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 583 MB              ; 00:00:00                           ;
 ; Total                ; 00:00:09     ; --                      ; --                  ; 00:00:21                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
@@ -114,6 +116,8 @@ https://fpgasoftware.intel.com/eula.
 ; EDA Netlist Writer   ; joel-Inspiron-14-5410 ; Linux Mint ; 21         ; x86_64         ;
 ; EDA Netlist Writer   ; joel-Inspiron-14-5410 ; Linux Mint ; 21         ; x86_64         ;
 ; EDA Netlist Writer   ; joel-Inspiron-14-5410 ; Linux Mint ; 21         ; x86_64         ;
+; EDA Netlist Writer   ; joel-Inspiron-14-5410 ; Linux Mint ; 21         ; x86_64         ;
+; EDA Netlist Writer   ; joel-Inspiron-14-5410 ; Linux Mint ; 21         ; x86_64         ;
 +----------------------+-----------------------+------------+------------+----------------+
 
 
@@ -125,6 +129,8 @@ quartus_fit --read_settings_files=off --write_settings_files=off BCD_2_7seg -c B
 quartus_asm --read_settings_files=off --write_settings_files=off BCD_2_7seg -c BCD_2_7seg
 quartus_sta BCD_2_7seg -c BCD_2_7seg
 quartus_eda --read_settings_files=off --write_settings_files=off BCD_2_7seg -c BCD_2_7seg
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off BCD_2_7seg -c BCD_2_7seg --vector_source=/home/joel/Documents/Quartus/BCD-2-7seg/Waveform.vwf --testbench_file=/home/joel/Documents/Quartus/BCD-2-7seg/simulation/qsim/Waveform.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=/home/joel/Documents/Quartus/BCD-2-7seg/simulation/qsim/ BCD_2_7seg -c BCD_2_7seg
 quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off BCD_2_7seg -c BCD_2_7seg --vector_source=/home/joel/Documents/Quartus/BCD-2-7seg/Waveform.vwf --testbench_file=/home/joel/Documents/Quartus/BCD-2-7seg/simulation/qsim/Waveform.vwf.vt
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=/home/joel/Documents/Quartus/BCD-2-7seg/simulation/qsim/ BCD_2_7seg -c BCD_2_7seg
 
