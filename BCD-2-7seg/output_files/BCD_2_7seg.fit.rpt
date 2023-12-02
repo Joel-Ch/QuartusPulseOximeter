@@ -1,5 +1,5 @@
 Fitter report for BCD_2_7seg
-Thu Nov  9 09:32:43 2023
+Fri Dec  1 15:14:49 2023
 Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
@@ -54,7 +54,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------+
 ; Fitter Summary                                                         ;
 +-----------------------+------------------------------------------------+
-; Fitter Status         ; Successful - Thu Nov  9 09:32:43 2023          ;
+; Fitter Status         ; Successful - Fri Dec  1 15:14:49 2023          ;
 ; Quartus Prime Version ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
 ; Revision Name         ; BCD_2_7seg                                     ;
 ; Top-level Entity Name ; BCD_2_7seg                                     ;
@@ -193,14 +193,14 @@ The pin-out file can be found in /home/joel/Documents/Quartus/BCD-2-7seg/output_
 +------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+-----------------+----------+--------------+--------------+----------------------+----------------+
 ; Name ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Combinational Fan-Out ; Registered Fan-Out ; Global ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Location assigned by ; Slow Slew Rate ;
 +------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+-----------------+----------+--------------+--------------+----------------------+----------------+
-; S_in ; 68    ; 2        ; 8            ; 3            ; 1           ; 5                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Fitter               ; no             ;
-; T_in ; 88    ; 2        ; 5            ; 5            ; 3           ; 7                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Fitter               ; no             ;
-; U_in ; 6     ; 1        ; 1            ; 3            ; 0           ; 7                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Fitter               ; no             ;
-; V_in ; 85    ; 2        ; 5            ; 5            ; 0           ; 7                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Fitter               ; no             ;
-; W_in ; 15    ; 1        ; 1            ; 2            ; 1           ; 5                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Fitter               ; no             ;
-; X_in ; 90    ; 2        ; 4            ; 5            ; 1           ; 7                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Fitter               ; no             ;
-; Y_in ; 17    ; 1        ; 1            ; 2            ; 3           ; 7                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Fitter               ; no             ;
-; Z_in ; 34    ; 1        ; 3            ; 0            ; 1           ; 7                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Fitter               ; no             ;
+; S    ; 68    ; 2        ; 8            ; 3            ; 1           ; 5                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Fitter               ; no             ;
+; T    ; 88    ; 2        ; 5            ; 5            ; 3           ; 7                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Fitter               ; no             ;
+; U    ; 6     ; 1        ; 1            ; 3            ; 0           ; 7                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Fitter               ; no             ;
+; V    ; 85    ; 2        ; 5            ; 5            ; 0           ; 7                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Fitter               ; no             ;
+; W    ; 15    ; 1        ; 1            ; 2            ; 1           ; 5                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Fitter               ; no             ;
+; X    ; 90    ; 2        ; 4            ; 5            ; 1           ; 7                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Fitter               ; no             ;
+; Y    ; 17    ; 1        ; 1            ; 2            ; 3           ; 7                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Fitter               ; no             ;
+; Z    ; 34    ; 1        ; 3            ; 0            ; 1           ; 7                     ; 0                  ; no     ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Fitter               ; no             ;
 +------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+-----------------+----------+--------------+--------------+----------------------+----------------+
 
 
@@ -246,7 +246,7 @@ The pin-out file can be found in /home/joel/Documents/Quartus/BCD-2-7seg/output_
 ; 3        ; 1          ; 1        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
 ; 4        ; 2          ; 1        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
 ; 5        ; 3          ; 1        ; C_out          ; output ; 3.3-V LVTTL  ;           ; Row I/O    ; N               ; no       ; Off          ;
-; 6        ; 4          ; 1        ; U_in           ; input  ; 3.3-V LVTTL  ;           ; Row I/O    ; N               ; no       ; Off          ;
+; 6        ; 4          ; 1        ; U              ; input  ; 3.3-V LVTTL  ;           ; Row I/O    ; N               ; no       ; Off          ;
 ; 7        ; 5          ; 1        ; F_out2         ; output ; 3.3-V LVTTL  ;           ; Row I/O    ; N               ; no       ; Off          ;
 ; 8        ; 6          ; 1        ; D_out          ; output ; 3.3-V LVTTL  ;           ; Row I/O    ; N               ; no       ; Off          ;
 ; 9        ;            ; 1        ; VCCIO1         ; power  ;              ; 3.3V      ; --         ;                 ; --       ; --           ;
@@ -255,9 +255,9 @@ The pin-out file can be found in /home/joel/Documents/Quartus/BCD-2-7seg/output_
 ; 12       ; 7          ; 1        ; G_out          ; output ; 3.3-V LVTTL  ;           ; Row I/O    ; N               ; no       ; Off          ;
 ; 13       ;            ;          ; VCCINT         ; power  ;              ; 2.5V/3.3V ; --         ;                 ; --       ; --           ;
 ; 14       ; 8          ; 1        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
-; 15       ; 9          ; 1        ; W_in           ; input  ; 3.3-V LVTTL  ;           ; Row I/O    ; N               ; no       ; Off          ;
+; 15       ; 9          ; 1        ; W              ; input  ; 3.3-V LVTTL  ;           ; Row I/O    ; N               ; no       ; Off          ;
 ; 16       ; 10         ; 1        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
-; 17       ; 11         ; 1        ; Y_in           ; input  ; 3.3-V LVTTL  ;           ; Row I/O    ; N               ; no       ; Off          ;
+; 17       ; 11         ; 1        ; Y              ; input  ; 3.3-V LVTTL  ;           ; Row I/O    ; N               ; no       ; Off          ;
 ; 18       ; 12         ; 1        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
 ; 19       ; 13         ; 1        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
 ; 20       ; 14         ; 1        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
@@ -274,7 +274,7 @@ The pin-out file can be found in /home/joel/Documents/Quartus/BCD-2-7seg/output_
 ; 31       ;            ; 1        ; VCCIO1         ; power  ;              ; 3.3V      ; --         ;                 ; --       ; --           ;
 ; 32       ;            ;          ; GNDIO          ; gnd    ;              ;           ; --         ;                 ; --       ; --           ;
 ; 33       ; 25         ; 1        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
-; 34       ; 26         ; 1        ; Z_in           ; input  ; 3.3-V LVTTL  ;           ; Column I/O ; N               ; no       ; Off          ;
+; 34       ; 26         ; 1        ; Z              ; input  ; 3.3-V LVTTL  ;           ; Column I/O ; N               ; no       ; Off          ;
 ; 35       ; 27         ; 1        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
 ; 36       ; 28         ; 1        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
 ; 37       ; 29         ; 1        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
@@ -308,7 +308,7 @@ The pin-out file can be found in /home/joel/Documents/Quartus/BCD-2-7seg/output_
 ; 65       ;            ;          ; GNDINT         ; gnd    ;              ;           ; --         ;                 ; --       ; --           ;
 ; 66       ; 52         ; 2        ; E_out          ; output ; 3.3-V LVTTL  ;           ; Row I/O    ; N               ; no       ; Off          ;
 ; 67       ; 53         ; 2        ; F_out          ; output ; 3.3-V LVTTL  ;           ; Row I/O    ; N               ; no       ; Off          ;
-; 68       ; 54         ; 2        ; S_in           ; input  ; 3.3-V LVTTL  ;           ; Row I/O    ; N               ; no       ; Off          ;
+; 68       ; 54         ; 2        ; S              ; input  ; 3.3-V LVTTL  ;           ; Row I/O    ; N               ; no       ; Off          ;
 ; 69       ; 55         ; 2        ; A_out2         ; output ; 3.3-V LVTTL  ;           ; Row I/O    ; N               ; no       ; Off          ;
 ; 70       ; 56         ; 2        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
 ; 71       ; 57         ; 2        ; GND*           ;        ;              ;           ; Row I/O    ;                 ; no       ; Off          ;
@@ -325,12 +325,12 @@ The pin-out file can be found in /home/joel/Documents/Quartus/BCD-2-7seg/output_
 ; 82       ; 66         ; 2        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
 ; 83       ; 67         ; 2        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
 ; 84       ; 68         ; 2        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
-; 85       ; 69         ; 2        ; V_in           ; input  ; 3.3-V LVTTL  ;           ; Column I/O ; N               ; no       ; Off          ;
+; 85       ; 69         ; 2        ; V              ; input  ; 3.3-V LVTTL  ;           ; Column I/O ; N               ; no       ; Off          ;
 ; 86       ; 70         ; 2        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
 ; 87       ; 71         ; 2        ; G_out2         ; output ; 3.3-V LVTTL  ;           ; Column I/O ; N               ; no       ; Off          ;
-; 88       ; 72         ; 2        ; T_in           ; input  ; 3.3-V LVTTL  ;           ; Column I/O ; N               ; no       ; Off          ;
+; 88       ; 72         ; 2        ; T              ; input  ; 3.3-V LVTTL  ;           ; Column I/O ; N               ; no       ; Off          ;
 ; 89       ; 73         ; 2        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
-; 90       ; 74         ; 2        ; X_in           ; input  ; 3.3-V LVTTL  ;           ; Column I/O ; N               ; no       ; Off          ;
+; 90       ; 74         ; 2        ; X              ; input  ; 3.3-V LVTTL  ;           ; Column I/O ; N               ; no       ; Off          ;
 ; 91       ; 75         ; 2        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
 ; 92       ; 76         ; 2        ; GND*           ;        ;              ;           ; Column I/O ;                 ; no       ; Off          ;
 ; 93       ;            ;          ; GNDIO          ; gnd    ;              ;           ; --         ;                 ; --       ; --           ;
@@ -380,14 +380,14 @@ Note: User assignments will override these defaults. The user specified values a
 ; E_out2   ; Missing location assignment ;
 ; F_out2   ; Missing location assignment ;
 ; G_out2   ; Missing location assignment ;
-; Y_in     ; Missing location assignment ;
-; W_in     ; Missing location assignment ;
-; X_in     ; Missing location assignment ;
-; Z_in     ; Missing location assignment ;
-; U_in     ; Missing location assignment ;
-; S_in     ; Missing location assignment ;
-; T_in     ; Missing location assignment ;
-; V_in     ; Missing location assignment ;
+; Y        ; Missing location assignment ;
+; W        ; Missing location assignment ;
+; X        ; Missing location assignment ;
+; Z        ; Missing location assignment ;
+; U        ; Missing location assignment ;
+; S        ; Missing location assignment ;
+; T        ; Missing location assignment ;
+; V        ; Missing location assignment ;
 +----------+-----------------------------+
 
 
@@ -420,14 +420,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; E_out2 ; Output   ; --            ;
 ; F_out2 ; Output   ; --            ;
 ; G_out2 ; Output   ; --            ;
-; Y_in   ; Input    ; (1)           ;
-; W_in   ; Input    ; (1)           ;
-; X_in   ; Input    ; (1)           ;
-; Z_in   ; Input    ; (1)           ;
-; U_in   ; Input    ; (1)           ;
-; S_in   ; Input    ; (1)           ;
-; T_in   ; Input    ; (1)           ;
-; V_in   ; Input    ; (1)           ;
+; Y      ; Input    ; (1)           ;
+; W      ; Input    ; (1)           ;
+; X      ; Input    ; (1)           ;
+; Z      ; Input    ; (1)           ;
+; U      ; Input    ; (1)           ;
+; S      ; Input    ; (1)           ;
+; T      ; Input    ; (1)           ;
+; V      ; Input    ; (1)           ;
 +--------+----------+---------------+
 
 
@@ -561,7 +561,7 @@ Info (176215): I/O bank details before I/O pin placement
     Info (176214): Statistics of I/O banks
         Info (176213): I/O bank number 1 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  38 pins available
         Info (176213): I/O bank number 2 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  42 pins available
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
@@ -580,9 +580,9 @@ Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
 Info (144001): Generated suppressed messages file /home/joel/Documents/Quartus/BCD-2-7seg/output_files/BCD_2_7seg.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 786 megabytes
-    Info: Processing ended: Thu Nov  9 09:32:43 2023
-    Info: Elapsed time: 00:00:00
+    Info: Peak virtual memory: 775 megabytes
+    Info: Processing ended: Fri Dec  1 15:14:49 2023
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 

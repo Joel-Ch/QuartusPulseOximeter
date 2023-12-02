@@ -10,23 +10,23 @@ z2
 cModel Technology
 Z0 d/home/joel/Documents/Quartus/BCD-2-7seg/simulation/qsim
 vBCD_2_7seg
-Z1 !s110 1701359953
+Z1 !s110 1701444222
 !i10b 1
-!s100 W:D5kZOAez^8m0doQlehn2
+!s100 Je>Co;3KSHd>Xj8cj22UY1
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IKkTemZ[DKfR8XN:nlj3WW1
+IgS:f<OQVdFUA2m9^k6e1:2
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1701359952
+w1701444222
 8BCD_2_7seg.vo
 FBCD_2_7seg.vo
-!i122 18
+!i122 28
 L0 32 809
 Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1701359953.000000
+Z5 !s108 1701444222.000000
 !s107 BCD_2_7seg.vo|
 !s90 -work|work|BCD_2_7seg.vo|
 !i113 1
@@ -36,16 +36,16 @@ n@b@c@d_2_7seg
 vBCD_2_7seg_vlg_vec_tst
 R1
 !i10b 1
-!s100 ]L3@T296^`8PK^U^lfE?W0
+!s100 g>`<25z=H[f>]^h;ekj2U3
 R2
-Ic6VOYM?EeW:=n4WLz;Xm`2
+II2GBQaOCXTY?5M`^?;FQm3
 R3
 R0
-w1701359951
+w1701444221
 8Waveform.vwf.vt
 FWaveform.vwf.vt
-!i122 19
-L0 30 146
+!i122 29
+L0 30 98
 R4
 r1
 !s85 0

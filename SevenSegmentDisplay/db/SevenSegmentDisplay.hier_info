@@ -1,0 +1,120 @@
+|SevenSegmentDisplay
+A_out <= inst.DB_MAX_OUTPUT_PORT_TYPE
+pin_name1 => 74163:inst1.CLK
+B_out <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+C_out <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+D_out <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+E_out <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+F_out <= inst25.DB_MAX_OUTPUT_PORT_TYPE
+G_out <= inst32.DB_MAX_OUTPUT_PORT_TYPE
+A_out2 <= inst42.DB_MAX_OUTPUT_PORT_TYPE
+B_out2 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+C_out2 <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+D_out2 <= inst31.DB_MAX_OUTPUT_PORT_TYPE
+E_out2 <= inst41.DB_MAX_OUTPUT_PORT_TYPE
+F_out2 <= inst46.DB_MAX_OUTPUT_PORT_TYPE
+G_out2 <= inst52.DB_MAX_OUTPUT_PORT_TYPE
+pin_name2 <= S.DB_MAX_OUTPUT_PORT_TYPE
+pin_name3 <= T.DB_MAX_OUTPUT_PORT_TYPE
+pin_name4 <= U.DB_MAX_OUTPUT_PORT_TYPE
+pin_name5 <= V.DB_MAX_OUTPUT_PORT_TYPE
+pin_name6 <= W.DB_MAX_OUTPUT_PORT_TYPE
+pin_name7 <= X.DB_MAX_OUTPUT_PORT_TYPE
+pin_name8 <= Y.DB_MAX_OUTPUT_PORT_TYPE
+pin_name9 <= Z.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SevenSegmentDisplay|74163:inst1
+clk => f74163:sub.clk
+ldn => ~NO_FANOUT~
+clrn => f74163:sub.clrn
+enp => ~NO_FANOUT~
+ent => ~NO_FANOUT~
+d => ~NO_FANOUT~
+c => ~NO_FANOUT~
+b => ~NO_FANOUT~
+a => ~NO_FANOUT~
+qd <= f74163:sub.qd
+qc <= f74163:sub.qc
+qb <= f74163:sub.qb
+qa <= f74163:sub.qa
+rco <= f74163:sub.rco
+
+
+|SevenSegmentDisplay|74163:inst1|f74163:sub
+RCO <= 129.DB_MAX_OUTPUT_PORT_TYPE
+CLK => 134.CLK
+CLK => 122.CLK
+CLK => 111.CLK
+CLK => 34.CLK
+CLRN => 137.IN0
+CLRN => 126.IN0
+CLRN => 115.IN0
+CLRN => 68.IN0
+D => 136.IN0
+LDN => 144.IN0
+LDN => 132.IN0
+LDN => 121.IN0
+LDN => 110.IN0
+LDN => 71.IN0
+ENP => 130.IN0
+ENP => 119.IN0
+ENP => 108.IN0
+ENP => 105.IN0
+C => 124.IN0
+B => 113.IN0
+A => 70.IN0
+ENT => 140.DATAIN
+QD <= 134.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 122.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 111.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 34.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SevenSegmentDisplay|74163:inst6
+clk => f74163:sub.clk
+ldn => ~NO_FANOUT~
+clrn => f74163:sub.clrn
+enp => ~NO_FANOUT~
+ent => ~NO_FANOUT~
+d => ~NO_FANOUT~
+c => ~NO_FANOUT~
+b => ~NO_FANOUT~
+a => ~NO_FANOUT~
+qd <= f74163:sub.qd
+qc <= f74163:sub.qc
+qb <= f74163:sub.qb
+qa <= f74163:sub.qa
+rco <= f74163:sub.rco
+
+
+|SevenSegmentDisplay|74163:inst6|f74163:sub
+RCO <= 129.DB_MAX_OUTPUT_PORT_TYPE
+CLK => 134.CLK
+CLK => 122.CLK
+CLK => 111.CLK
+CLK => 34.CLK
+CLRN => 137.IN0
+CLRN => 126.IN0
+CLRN => 115.IN0
+CLRN => 68.IN0
+D => 136.IN0
+LDN => 144.IN0
+LDN => 132.IN0
+LDN => 121.IN0
+LDN => 110.IN0
+LDN => 71.IN0
+ENP => 130.IN0
+ENP => 119.IN0
+ENP => 108.IN0
+ENP => 105.IN0
+C => 124.IN0
+B => 113.IN0
+A => 70.IN0
+ENT => 140.DATAIN
+QD <= 134.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 122.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 111.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 34.DB_MAX_OUTPUT_PORT_TYPE
+
+

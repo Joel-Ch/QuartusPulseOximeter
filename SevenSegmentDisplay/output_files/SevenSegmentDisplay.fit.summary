@@ -1,0 +1,11 @@
+Fitter Status : Successful - Fri Dec  1 15:01:53 2023
+Quartus Prime Version : 22.1std.2 Build 922 07/20/2023 SC Lite Edition
+Revision Name : SevenSegmentDisplay
+Top-level Entity Name : SevenSegmentDisplay
+Family : MAX II
+Device : EPM240T100C5
+Timing Models : Final
+Total logic elements : 28 / 240 ( 12 % )
+Total pins : 23 / 80 ( 29 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

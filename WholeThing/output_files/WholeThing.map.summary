@@ -1,9 +1,9 @@
-Analysis & Synthesis Status : Successful - Thu Nov 30 11:41:49 2023
+Analysis & Synthesis Status : Successful - Fri Dec  1 10:48:16 2023
 Quartus Prime Version : 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 Revision Name : WholeThing
 Top-level Entity Name : WholeThing
 Family : MAX II
-Total logic elements : 58
+Total logic elements : 59
 Total pins : 34
 Total virtual pins : 0
 UFM blocks : 0 / 1 ( 0 % )

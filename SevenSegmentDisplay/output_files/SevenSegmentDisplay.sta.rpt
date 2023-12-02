@@ -1,0 +1,407 @@
+Timing Analyzer report for SevenSegmentDisplay
+Fri Dec  1 15:01:55 2023
+Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Fmax Summary
+  6. Setup Summary
+  7. Hold Summary
+  8. Recovery Summary
+  9. Removal Summary
+ 10. Minimum Pulse Width Summary
+ 11. Setup: 'pin_name1'
+ 12. Setup: '74163:inst1|f74163:sub|134'
+ 13. Hold: 'pin_name1'
+ 14. Hold: '74163:inst1|f74163:sub|134'
+ 15. Setup Transfers
+ 16. Hold Transfers
+ 17. Report TCCS
+ 18. Report RSKM
+ 19. Unconstrained Paths Summary
+ 20. Clock Status Summary
+ 21. Unconstrained Output Ports
+ 22. Unconstrained Output Ports
+ 23. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2023  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++--------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                        ;
++-----------------------+--------------------------------------------------------+
+; Quartus Prime Version ; Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
+; Timing Analyzer       ; Legacy Timing Analyzer                                 ;
+; Revision Name         ; SevenSegmentDisplay                                    ;
+; Device Family         ; MAX II                                                 ;
+; Device Name           ; EPM240T100C5                                           ;
+; Timing Models         ; Final                                                  ;
+; Delay Model           ; Slow Model                                             ;
+; Rise/Fall Delays      ; Unavailable                                            ;
++-----------------------+--------------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                                                 ;
++----------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+--------------------------------+
+; Clock Name                 ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets                        ;
++----------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+--------------------------------+
+; 74163:inst1|f74163:sub|134 ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { 74163:inst1|f74163:sub|134 } ;
+; pin_name1                  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { pin_name1 }                  ;
++----------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+--------------------------------+
+
+
++------------------------------------------------------------------+
+; Fmax Summary                                                     ;
++------------+-----------------+----------------------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name                 ; Note ;
++------------+-----------------+----------------------------+------+
+; 227.95 MHz ; 227.95 MHz      ; pin_name1                  ;      ;
+; 238.38 MHz ; 238.38 MHz      ; 74163:inst1|f74163:sub|134 ;      ;
++------------+-----------------+----------------------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++-----------------------------------------------------+
+; Setup Summary                                       ;
++----------------------------+--------+---------------+
+; Clock                      ; Slack  ; End Point TNS ;
++----------------------------+--------+---------------+
+; pin_name1                  ; -3.387 ; -10.974       ;
+; 74163:inst1|f74163:sub|134 ; -3.195 ; -11.016       ;
++----------------------------+--------+---------------+
+
+
++-----------------------------------------------------+
+; Hold Summary                                        ;
++----------------------------+--------+---------------+
+; Clock                      ; Slack  ; End Point TNS ;
++----------------------------+--------+---------------+
+; pin_name1                  ; -1.788 ; -2.970        ;
+; 74163:inst1|f74163:sub|134 ; 2.230  ; 0.000         ;
++----------------------------+--------+---------------+
+
+
+--------------------
+; Recovery Summary ;
+--------------------
+No paths to report.
+
+
+-------------------
+; Removal Summary ;
+-------------------
+No paths to report.
+
+
++-----------------------------------------------------+
+; Minimum Pulse Width Summary                         ;
++----------------------------+--------+---------------+
+; Clock                      ; Slack  ; End Point TNS ;
++----------------------------+--------+---------------+
+; pin_name1                  ; -2.289 ; -2.289        ;
+; 74163:inst1|f74163:sub|134 ; 0.234  ; 0.000         ;
++----------------------------+--------+---------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'pin_name1'                                                                                                                                   ;
++--------+----------------------------+----------------------------+----------------------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                  ; To Node                    ; Launch Clock               ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+----------------------------+----------------------------+----------------------------+-------------+--------------+------------+------------+
+; -3.387 ; 74163:inst1|f74163:sub|111 ; 74163:inst1|f74163:sub|122 ; pin_name1                  ; pin_name1   ; 1.000        ; 0.000      ; 4.054      ;
+; -3.020 ; 74163:inst1|f74163:sub|34  ; 74163:inst1|f74163:sub|122 ; pin_name1                  ; pin_name1   ; 1.000        ; 0.000      ; 3.687      ;
+; -2.690 ; 74163:inst1|f74163:sub|34  ; 74163:inst1|f74163:sub|134 ; pin_name1                  ; pin_name1   ; 1.000        ; 0.000      ; 3.357      ;
+; -2.678 ; 74163:inst1|f74163:sub|34  ; 74163:inst1|f74163:sub|111 ; pin_name1                  ; pin_name1   ; 1.000        ; 0.000      ; 3.345      ;
+; -2.610 ; 74163:inst1|f74163:sub|111 ; 74163:inst1|f74163:sub|134 ; pin_name1                  ; pin_name1   ; 1.000        ; 0.000      ; 3.277      ;
+; -2.536 ; 74163:inst1|f74163:sub|111 ; 74163:inst1|f74163:sub|111 ; pin_name1                  ; pin_name1   ; 1.000        ; 0.000      ; 3.203      ;
+; -2.219 ; 74163:inst1|f74163:sub|34  ; 74163:inst1|f74163:sub|34  ; pin_name1                  ; pin_name1   ; 1.000        ; 0.000      ; 2.886      ;
+; -2.098 ; 74163:inst1|f74163:sub|122 ; 74163:inst1|f74163:sub|122 ; pin_name1                  ; pin_name1   ; 1.000        ; 0.000      ; 2.765      ;
+; -2.070 ; 74163:inst1|f74163:sub|122 ; 74163:inst1|f74163:sub|134 ; pin_name1                  ; pin_name1   ; 1.000        ; 0.000      ; 2.737      ;
+; 0.177  ; 74163:inst1|f74163:sub|134 ; 74163:inst1|f74163:sub|134 ; 74163:inst1|f74163:sub|134 ; pin_name1   ; 0.500        ; 3.348      ; 3.714      ;
+; 0.183  ; 74163:inst1|f74163:sub|134 ; 74163:inst1|f74163:sub|122 ; 74163:inst1|f74163:sub|134 ; pin_name1   ; 0.500        ; 3.348      ; 3.708      ;
+; 0.189  ; 74163:inst1|f74163:sub|134 ; 74163:inst1|f74163:sub|111 ; 74163:inst1|f74163:sub|134 ; pin_name1   ; 0.500        ; 3.348      ; 3.702      ;
+; 0.648  ; 74163:inst1|f74163:sub|134 ; 74163:inst1|f74163:sub|34  ; 74163:inst1|f74163:sub|134 ; pin_name1   ; 0.500        ; 3.348      ; 3.243      ;
+; 0.677  ; 74163:inst1|f74163:sub|134 ; 74163:inst1|f74163:sub|134 ; 74163:inst1|f74163:sub|134 ; pin_name1   ; 1.000        ; 3.348      ; 3.714      ;
+; 0.683  ; 74163:inst1|f74163:sub|134 ; 74163:inst1|f74163:sub|122 ; 74163:inst1|f74163:sub|134 ; pin_name1   ; 1.000        ; 3.348      ; 3.708      ;
+; 0.689  ; 74163:inst1|f74163:sub|134 ; 74163:inst1|f74163:sub|111 ; 74163:inst1|f74163:sub|134 ; pin_name1   ; 1.000        ; 3.348      ; 3.702      ;
+; 1.148  ; 74163:inst1|f74163:sub|134 ; 74163:inst1|f74163:sub|34  ; 74163:inst1|f74163:sub|134 ; pin_name1   ; 1.000        ; 3.348      ; 3.243      ;
++--------+----------------------------+----------------------------+----------------------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: '74163:inst1|f74163:sub|134'                                                                                                                                 ;
++--------+----------------------------+----------------------------+----------------------------+----------------------------+--------------+------------+------------+
+; Slack  ; From Node                  ; To Node                    ; Launch Clock               ; Latch Clock                ; Relationship ; Clock Skew ; Data Delay ;
++--------+----------------------------+----------------------------+----------------------------+----------------------------+--------------+------------+------------+
+; -3.195 ; 74163:inst6|f74163:sub|122 ; 74163:inst6|f74163:sub|134 ; 74163:inst1|f74163:sub|134 ; 74163:inst1|f74163:sub|134 ; 1.000        ; 0.000      ; 3.862      ;
+; -3.014 ; 74163:inst6|f74163:sub|34  ; 74163:inst6|f74163:sub|122 ; 74163:inst1|f74163:sub|134 ; 74163:inst1|f74163:sub|134 ; 1.000        ; 0.000      ; 3.681      ;
+; -3.014 ; 74163:inst6|f74163:sub|34  ; 74163:inst6|f74163:sub|111 ; 74163:inst1|f74163:sub|134 ; 74163:inst1|f74163:sub|134 ; 1.000        ; 0.000      ; 3.681      ;
+; -2.995 ; 74163:inst6|f74163:sub|34  ; 74163:inst6|f74163:sub|134 ; 74163:inst1|f74163:sub|134 ; 74163:inst1|f74163:sub|134 ; 1.000        ; 0.000      ; 3.662      ;
+; -2.863 ; 74163:inst6|f74163:sub|111 ; 74163:inst6|f74163:sub|134 ; 74163:inst1|f74163:sub|134 ; 74163:inst1|f74163:sub|134 ; 1.000        ; 0.000      ; 3.530      ;
+; -2.746 ; 74163:inst6|f74163:sub|134 ; 74163:inst6|f74163:sub|122 ; 74163:inst1|f74163:sub|134 ; 74163:inst1|f74163:sub|134 ; 1.000        ; 0.000      ; 3.413      ;
+; -2.746 ; 74163:inst6|f74163:sub|134 ; 74163:inst6|f74163:sub|111 ; 74163:inst1|f74163:sub|134 ; 74163:inst1|f74163:sub|134 ; 1.000        ; 0.000      ; 3.413      ;
+; -2.740 ; 74163:inst6|f74163:sub|111 ; 74163:inst6|f74163:sub|122 ; 74163:inst1|f74163:sub|134 ; 74163:inst1|f74163:sub|134 ; 1.000        ; 0.000      ; 3.407      ;
+; -2.275 ; 74163:inst6|f74163:sub|134 ; 74163:inst6|f74163:sub|134 ; 74163:inst1|f74163:sub|134 ; 74163:inst1|f74163:sub|134 ; 1.000        ; 0.000      ; 2.942      ;
+; -2.239 ; 74163:inst6|f74163:sub|122 ; 74163:inst6|f74163:sub|122 ; 74163:inst1|f74163:sub|134 ; 74163:inst1|f74163:sub|134 ; 1.000        ; 0.000      ; 2.906      ;
+; -1.793 ; 74163:inst6|f74163:sub|34  ; 74163:inst6|f74163:sub|34  ; 74163:inst1|f74163:sub|134 ; 74163:inst1|f74163:sub|134 ; 1.000        ; 0.000      ; 2.460      ;
+; -1.784 ; 74163:inst6|f74163:sub|111 ; 74163:inst6|f74163:sub|111 ; 74163:inst1|f74163:sub|134 ; 74163:inst1|f74163:sub|134 ; 1.000        ; 0.000      ; 2.451      ;
++--------+----------------------------+----------------------------+----------------------------+----------------------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'pin_name1'                                                                                                                                    ;
++--------+----------------------------+----------------------------+----------------------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                  ; To Node                    ; Launch Clock               ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+----------------------------+----------------------------+----------------------------+-------------+--------------+------------+------------+
+; -1.788 ; 74163:inst1|f74163:sub|134 ; 74163:inst1|f74163:sub|134 ; 74163:inst1|f74163:sub|134 ; pin_name1   ; 0.000        ; 3.348      ; 2.157      ;
+; -1.288 ; 74163:inst1|f74163:sub|134 ; 74163:inst1|f74163:sub|134 ; 74163:inst1|f74163:sub|134 ; pin_name1   ; -0.500       ; 3.348      ; 2.157      ;
+; -0.702 ; 74163:inst1|f74163:sub|134 ; 74163:inst1|f74163:sub|34  ; 74163:inst1|f74163:sub|134 ; pin_name1   ; 0.000        ; 3.348      ; 3.243      ;
+; -0.243 ; 74163:inst1|f74163:sub|134 ; 74163:inst1|f74163:sub|111 ; 74163:inst1|f74163:sub|134 ; pin_name1   ; 0.000        ; 3.348      ; 3.702      ;
+; -0.237 ; 74163:inst1|f74163:sub|134 ; 74163:inst1|f74163:sub|122 ; 74163:inst1|f74163:sub|134 ; pin_name1   ; 0.000        ; 3.348      ; 3.708      ;
+; -0.202 ; 74163:inst1|f74163:sub|134 ; 74163:inst1|f74163:sub|34  ; 74163:inst1|f74163:sub|134 ; pin_name1   ; -0.500       ; 3.348      ; 3.243      ;
+; 0.257  ; 74163:inst1|f74163:sub|134 ; 74163:inst1|f74163:sub|111 ; 74163:inst1|f74163:sub|134 ; pin_name1   ; -0.500       ; 3.348      ; 3.702      ;
+; 0.263  ; 74163:inst1|f74163:sub|134 ; 74163:inst1|f74163:sub|122 ; 74163:inst1|f74163:sub|134 ; pin_name1   ; -0.500       ; 3.348      ; 3.708      ;
+; 2.516  ; 74163:inst1|f74163:sub|122 ; 74163:inst1|f74163:sub|134 ; pin_name1                  ; pin_name1   ; 0.000        ; 0.000      ; 2.737      ;
+; 2.544  ; 74163:inst1|f74163:sub|122 ; 74163:inst1|f74163:sub|122 ; pin_name1                  ; pin_name1   ; 0.000        ; 0.000      ; 2.765      ;
+; 2.547  ; 74163:inst1|f74163:sub|34  ; 74163:inst1|f74163:sub|34  ; pin_name1                  ; pin_name1   ; 0.000        ; 0.000      ; 2.768      ;
+; 2.632  ; 74163:inst1|f74163:sub|34  ; 74163:inst1|f74163:sub|111 ; pin_name1                  ; pin_name1   ; 0.000        ; 0.000      ; 2.853      ;
+; 2.689  ; 74163:inst1|f74163:sub|34  ; 74163:inst1|f74163:sub|134 ; pin_name1                  ; pin_name1   ; 0.000        ; 0.000      ; 2.910      ;
+; 2.982  ; 74163:inst1|f74163:sub|111 ; 74163:inst1|f74163:sub|111 ; pin_name1                  ; pin_name1   ; 0.000        ; 0.000      ; 3.203      ;
+; 3.056  ; 74163:inst1|f74163:sub|111 ; 74163:inst1|f74163:sub|134 ; pin_name1                  ; pin_name1   ; 0.000        ; 0.000      ; 3.277      ;
+; 3.130  ; 74163:inst1|f74163:sub|34  ; 74163:inst1|f74163:sub|122 ; pin_name1                  ; pin_name1   ; 0.000        ; 0.000      ; 3.351      ;
+; 3.833  ; 74163:inst1|f74163:sub|111 ; 74163:inst1|f74163:sub|122 ; pin_name1                  ; pin_name1   ; 0.000        ; 0.000      ; 4.054      ;
++--------+----------------------------+----------------------------+----------------------------+-------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: '74163:inst1|f74163:sub|134'                                                                                                                                 ;
++-------+----------------------------+----------------------------+----------------------------+----------------------------+--------------+------------+------------+
+; Slack ; From Node                  ; To Node                    ; Launch Clock               ; Latch Clock                ; Relationship ; Clock Skew ; Data Delay ;
++-------+----------------------------+----------------------------+----------------------------+----------------------------+--------------+------------+------------+
+; 2.230 ; 74163:inst6|f74163:sub|111 ; 74163:inst6|f74163:sub|111 ; 74163:inst1|f74163:sub|134 ; 74163:inst1|f74163:sub|134 ; 0.000        ; 0.000      ; 2.451      ;
+; 2.239 ; 74163:inst6|f74163:sub|34  ; 74163:inst6|f74163:sub|34  ; 74163:inst1|f74163:sub|134 ; 74163:inst1|f74163:sub|134 ; 0.000        ; 0.000      ; 2.460      ;
+; 2.333 ; 74163:inst6|f74163:sub|134 ; 74163:inst6|f74163:sub|134 ; 74163:inst1|f74163:sub|134 ; 74163:inst1|f74163:sub|134 ; 0.000        ; 0.000      ; 2.554      ;
+; 2.685 ; 74163:inst6|f74163:sub|122 ; 74163:inst6|f74163:sub|122 ; 74163:inst1|f74163:sub|134 ; 74163:inst1|f74163:sub|134 ; 0.000        ; 0.000      ; 2.906      ;
+; 2.989 ; 74163:inst6|f74163:sub|34  ; 74163:inst6|f74163:sub|134 ; 74163:inst1|f74163:sub|134 ; 74163:inst1|f74163:sub|134 ; 0.000        ; 0.000      ; 3.210      ;
+; 3.170 ; 74163:inst6|f74163:sub|111 ; 74163:inst6|f74163:sub|122 ; 74163:inst1|f74163:sub|134 ; 74163:inst1|f74163:sub|134 ; 0.000        ; 0.000      ; 3.391      ;
+; 3.179 ; 74163:inst6|f74163:sub|34  ; 74163:inst6|f74163:sub|111 ; 74163:inst1|f74163:sub|134 ; 74163:inst1|f74163:sub|134 ; 0.000        ; 0.000      ; 3.400      ;
+; 3.192 ; 74163:inst6|f74163:sub|134 ; 74163:inst6|f74163:sub|122 ; 74163:inst1|f74163:sub|134 ; 74163:inst1|f74163:sub|134 ; 0.000        ; 0.000      ; 3.413      ;
+; 3.192 ; 74163:inst6|f74163:sub|134 ; 74163:inst6|f74163:sub|111 ; 74163:inst1|f74163:sub|134 ; 74163:inst1|f74163:sub|134 ; 0.000        ; 0.000      ; 3.413      ;
+; 3.281 ; 74163:inst6|f74163:sub|111 ; 74163:inst6|f74163:sub|134 ; 74163:inst1|f74163:sub|134 ; 74163:inst1|f74163:sub|134 ; 0.000        ; 0.000      ; 3.502      ;
+; 3.290 ; 74163:inst6|f74163:sub|34  ; 74163:inst6|f74163:sub|122 ; 74163:inst1|f74163:sub|134 ; 74163:inst1|f74163:sub|134 ; 0.000        ; 0.000      ; 3.511      ;
+; 3.625 ; 74163:inst6|f74163:sub|122 ; 74163:inst6|f74163:sub|134 ; 74163:inst1|f74163:sub|134 ; 74163:inst1|f74163:sub|134 ; 0.000        ; 0.000      ; 3.846      ;
++-------+----------------------------+----------------------------+----------------------------+----------------------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Setup Transfers                                                                                     ;
++----------------------------+----------------------------+----------+----------+----------+----------+
+; From Clock                 ; To Clock                   ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++----------------------------+----------------------------+----------+----------+----------+----------+
+; 74163:inst1|f74163:sub|134 ; 74163:inst1|f74163:sub|134 ; 22       ; 0        ; 0        ; 0        ;
+; 74163:inst1|f74163:sub|134 ; pin_name1                  ; 5        ; 5        ; 0        ; 0        ;
+; pin_name1                  ; pin_name1                  ; 13       ; 0        ; 0        ; 0        ;
++----------------------------+----------------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-----------------------------------------------------------------------------------------------------+
+; Hold Transfers                                                                                      ;
++----------------------------+----------------------------+----------+----------+----------+----------+
+; From Clock                 ; To Clock                   ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++----------------------------+----------------------------+----------+----------+----------+----------+
+; 74163:inst1|f74163:sub|134 ; 74163:inst1|f74163:sub|134 ; 22       ; 0        ; 0        ; 0        ;
+; 74163:inst1|f74163:sub|134 ; pin_name1                  ; 5        ; 5        ; 0        ; 0        ;
+; pin_name1                  ; pin_name1                  ; 13       ; 0        ; 0        ; 0        ;
++----------------------------+----------------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No non-DPA dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths Summary                    ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 0     ; 0    ;
+; Unconstrained Input Port Paths  ; 0     ; 0    ;
+; Unconstrained Output Ports      ; 22    ; 22   ;
+; Unconstrained Output Port Paths ; 60    ; 60   ;
++---------------------------------+-------+------+
+
+
++------------------------------------------------------------------------------+
+; Clock Status Summary                                                         ;
++----------------------------+----------------------------+------+-------------+
+; Target                     ; Clock                      ; Type ; Status      ;
++----------------------------+----------------------------+------+-------------+
+; 74163:inst1|f74163:sub|134 ; 74163:inst1|f74163:sub|134 ; Base ; Constrained ;
+; pin_name1                  ; pin_name1                  ; Base ; Constrained ;
++----------------------------+----------------------------+------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; A_out       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; A_out2      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; B_out       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; B_out2      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; C_out       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; C_out2      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; D_out       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; D_out2      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; E_out       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; E_out2      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; F_out       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; F_out2      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; G_out       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; G_out2      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; pin_name2   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; pin_name3   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; pin_name4   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; pin_name5   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; pin_name6   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; pin_name7   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; pin_name8   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; pin_name9   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; A_out       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; A_out2      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; B_out       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; B_out2      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; C_out       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; C_out2      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; D_out       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; D_out2      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; E_out       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; E_out2      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; F_out       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; F_out2      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; G_out       ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; G_out2      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; pin_name2   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; pin_name3   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; pin_name4   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; pin_name5   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; pin_name6   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; pin_name7   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; pin_name8   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; pin_name9   ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Timing Analyzer
+    Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
+    Info: Processing started: Fri Dec  1 15:01:55 2023
+Info: Command: quartus_sta SevenSegmentDisplay -c SevenSegmentDisplay
+Info: qsta_default_script.tcl version: #1
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'SevenSegmentDisplay.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name 74163:inst1|f74163:sub|134 74163:inst1|f74163:sub|134
+    Info (332105): create_clock -period 1.000 -name pin_name1 pin_name1
+Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -3.387
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.387             -10.974 pin_name1 
+    Info (332119):    -3.195             -11.016 74163:inst1|f74163:sub|134 
+Info (332146): Worst-case hold slack is -1.788
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -1.788              -2.970 pin_name1 
+    Info (332119):     2.230               0.000 74163:inst1|f74163:sub|134 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -2.289
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -2.289              -2.289 pin_name1 
+    Info (332119):     0.234               0.000 74163:inst1|f74163:sub|134 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus Prime Timing Analyzer was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 343 megabytes
+    Info: Processing ended: Fri Dec  1 15:01:55 2023
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+
