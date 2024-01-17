@@ -1,5 +1,5 @@
 Flow report for WholeThing
-Fri Dec  1 10:48:23 2023
+Wed Jan 17 14:40:44 2024
 Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------+
 ; Flow Summary                                                           ;
 +-----------------------+------------------------------------------------+
-; Flow Status           ; Successful - Fri Dec  1 10:48:23 2023          ;
+; Flow Status           ; Successful - Wed Jan 17 14:40:44 2024          ;
 ; Quartus Prime Version ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
 ; Revision Name         ; WholeThing                                     ;
 ; Top-level Entity Name ; WholeThing                                     ;
@@ -96,6 +96,8 @@ https://fpgasoftware.intel.com/eula.
 ; Assembler            ; 00:00:00     ; 1.0                     ; 326 MB              ; 00:00:00                           ;
 ; Timing Analyzer      ; 00:00:00     ; 1.0                     ; 343 MB              ; 00:00:00                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 583 MB              ; 00:00:00                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 571 MB              ; 00:00:00                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 583 MB              ; 00:00:00                           ;
 ; Total                ; 00:00:09     ; --                      ; --                  ; 00:00:21                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
@@ -110,6 +112,8 @@ https://fpgasoftware.intel.com/eula.
 ; Assembler            ; joel-Inspiron-14-5410 ; Linux Mint ; 21         ; x86_64         ;
 ; Timing Analyzer      ; joel-Inspiron-14-5410 ; Linux Mint ; 21         ; x86_64         ;
 ; EDA Netlist Writer   ; joel-Inspiron-14-5410 ; Linux Mint ; 21         ; x86_64         ;
+; EDA Netlist Writer   ; joel-Inspiron-14-5410 ; Linux Mint ; 21         ; x86_64         ;
+; EDA Netlist Writer   ; joel-Inspiron-14-5410 ; Linux Mint ; 21         ; x86_64         ;
 +----------------------+-----------------------+------------+------------+----------------+
 
 
@@ -121,6 +125,8 @@ quartus_fit --read_settings_files=off --write_settings_files=off WholeThing -c W
 quartus_asm --read_settings_files=off --write_settings_files=off WholeThing -c WholeThing
 quartus_sta WholeThing -c WholeThing
 quartus_eda --read_settings_files=off --write_settings_files=off WholeThing -c WholeThing
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off WholeThing -c WholeThing --vector_source=/home/joel/Documents/Quartus/WholeThing/Waveform.vwf --testbench_file=/home/joel/Documents/Quartus/WholeThing/simulation/qsim/Waveform.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=/home/joel/Documents/Quartus/WholeThing/simulation/qsim/ WholeThing -c WholeThing
 
 
 
